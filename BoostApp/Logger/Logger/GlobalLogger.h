@@ -3,25 +3,10 @@
 /* Boost */
 #include <boost/log/sources/global_logger_storage.hpp>	// for BOOST_LOG_GLOBAL_LOGGER
 #include <boost/log/sources/severity_logger.hpp>		// for severity_logger
-#include <boost/log/expressions/keyword.hpp>			// for BOOST_LOG_ATTRIBUTE_KEYWORD
+/* Original */
+#include "SeverityType.h"
 
 namespace Log{
-	/// Log level type
-	typedef enum struct SEVERITY_TYPE
-	{
-		/*note,*/ Debug, Info, Warn, Error,	/*critical,*/ Fatal, NUM
-	}Lv;
-
-	/**
-	 * Declare keyword
-	 *
-	 * define struct severity
-	 * @param severity [i] declare struct name
-	 * @param "severity" [i] struct attribute name
-	 * @param Log::Lv [i] instance tag
-	 */
-	BOOST_LOG_ATTRIBUTE_KEYWORD( severity, "Severity", Log::Lv );
-
 	/**
 	 * Declare logger
 	 *

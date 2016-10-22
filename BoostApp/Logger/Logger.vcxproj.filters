@@ -29,6 +29,9 @@
     <ClInclude Include="Logger\System.h">
       <Filter>ソース ファイル\Logger</Filter>
     </ClInclude>
+    <ClInclude Include="Logger\SeverityType.h">
+      <Filter>ソース ファイル\Logger</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
