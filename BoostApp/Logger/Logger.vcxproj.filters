@@ -12,11 +12,11 @@
     <Filter Include="ソース ファイル\Logger">
       <UniqueIdentifier>{05cc660a-8c17-4b91-84b1-11a40fc919ac}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ソース ファイル\Utility">
+      <UniqueIdentifier>{6342fe5c-5215-4742-ab80-68ec10ebd3af}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="e_cast.hpp">
-      <Filter>ソース ファイル</Filter>
-    </ClInclude>
     <ClInclude Include="Logger\ConsoleLogger.h">
       <Filter>ソース ファイル\Logger</Filter>
     </ClInclude>
@@ -25,6 +25,9 @@
     </ClInclude>
     <ClInclude Include="Logger\Logger.h">
       <Filter>ソース ファイル\Logger</Filter>
+    </ClInclude>
+    <ClInclude Include="e_cast.hpp">
+      <Filter>ソース ファイル\Utility</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

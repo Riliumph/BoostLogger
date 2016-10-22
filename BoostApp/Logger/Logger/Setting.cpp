@@ -10,7 +10,7 @@
 #include <boost/log/attributes/current_process_name.hpp>
 #include <boost/log/sources/severity_logger.hpp>
 //ORIGINAL
-#include "e_cast.hpp"
+#include "Utility/e_cast.hpp"
 #include "ConsoleLogger.h"
 
 namespace Log{
