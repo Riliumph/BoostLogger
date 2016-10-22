@@ -1,7 +1,7 @@
-﻿#ifndef INCLUDE_CONSOLE_SINK_H
-#define INCLUDE_CONSOLE_SINK_H
+﻿#ifndef INCLUDE_FILE_SINK_H
+#define INCLUDE_FILE_SINK_H
 namespace Log{
-	namespace Console{
+	namespace File{
 		/**
 		 * Concifgure Boost.Logger
 		 *
@@ -9,6 +9,6 @@ namespace Log{
 		 * Add sink to boost log core
 		 */
 		void ConfigureSink();
-	}// namespace Console
+	}// namespace File
 }// namespace Log
-#endif// INCLUDE_CONSOLE_SINK_H
+#endif// INCLUDE_FILE_SINK_H
