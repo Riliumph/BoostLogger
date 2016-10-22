@@ -1,5 +1,5 @@
 ﻿#ifndef INCLUDE_CONSOLE_SINK_H
-#define INCLUDE_CONSOLE_LOGGER_H
+#define INCLUDE_CONSOLE_SINK_H
 namespace Log{
 	namespace Console{
 		/**
