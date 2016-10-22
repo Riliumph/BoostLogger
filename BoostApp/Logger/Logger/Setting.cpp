@@ -11,7 +11,7 @@
 #include <boost/log/sources/severity_logger.hpp>
 //ORIGINAL
 #include "Utility/e_cast.hpp"
-#include "ConsoleLogger.h"
+#include "ConsoleSink.h"
 
 namespace Log{
 	namespace src = boost::log::sources;
@@ -39,7 +39,7 @@ namespace Log{
 
 	void BootLogSystem()
 	{
-		Console::ConfigureLogger();
+		Console::ConfigureSink();
 	}
 
 	std::ostream& operator<< ( std::ostream& os, const Log::Lv& level )

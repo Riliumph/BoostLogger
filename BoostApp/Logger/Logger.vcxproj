@@ -153,12 +153,12 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="e_cast.hpp" />
-    <ClInclude Include="Logger\ConsoleLogger.h" />
+    <ClInclude Include="Logger\ConsoleSink.h" />
     <ClInclude Include="Logger\Logger.h" />
     <ClInclude Include="Logger\Setting.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Logger\ConsoleLogger.cpp" />
+    <ClCompile Include="Logger\ConsoleSink.cpp" />
     <ClCompile Include="Logger\Setting.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>

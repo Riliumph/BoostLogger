@@ -17,9 +17,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Logger\ConsoleLogger.h">
-      <Filter>ソース ファイル\Logger</Filter>
-    </ClInclude>
     <ClInclude Include="Logger\Setting.h">
       <Filter>ソース ファイル\Logger</Filter>
     </ClInclude>
@@ -29,15 +26,18 @@
     <ClInclude Include="e_cast.hpp">
       <Filter>ソース ファイル\Utility</Filter>
     </ClInclude>
+    <ClInclude Include="Logger\ConsoleSink.h">
+      <Filter>ソース ファイル\Logger</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="Logger\ConsoleLogger.cpp">
+    <ClCompile Include="Logger\Setting.cpp">
       <Filter>ソース ファイル\Logger</Filter>
     </ClCompile>
-    <ClCompile Include="Logger\Setting.cpp">
+    <ClCompile Include="Logger\ConsoleSink.cpp">
       <Filter>ソース ファイル\Logger</Filter>
     </ClCompile>
   </ItemGroup>

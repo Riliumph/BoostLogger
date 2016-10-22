@@ -1,4 +1,4 @@
-﻿#include "ConsoleLogger.h"
+﻿#include "ConsoleSink.h"
 /* Boost */
 #include <boost/make_shared.hpp>
 #include <boost/log/common.hpp>
@@ -72,7 +72,7 @@ namespace Log{
 			return frontend;
 		}
 
-		void ConfigureLogger( void )
+		void ConfigureSink()
 		{
 			auto backsink = CreateBacksink();
 			auto frontsink = CreateFrontsink( backsink );
