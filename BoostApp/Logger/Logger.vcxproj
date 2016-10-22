@@ -75,12 +75,16 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
@@ -153,13 +157,15 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="e_cast.hpp" />
-    <ClInclude Include="Logger\ConsoleLogger.h" />
-    <ClInclude Include="Logger\Logger.h" />
-    <ClInclude Include="Logger\Setting.h" />
+    <ClInclude Include="Logger\ConsoleSink.h" />
+    <ClInclude Include="Logger\SeverityType.h" />
+    <ClInclude Include="Logger\System.h" />
+    <ClInclude Include="Logger\GlobalLogger.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Logger\ConsoleLogger.cpp" />
-    <ClCompile Include="Logger\Setting.cpp" />
+    <ClCompile Include="Logger\ConsoleSink.cpp" />
+    <ClCompile Include="Logger\System.cpp" />
+    <ClCompile Include="Logger\GlobalLogger.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>

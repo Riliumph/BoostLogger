@@ -1,4 +1,4 @@
-﻿#include "ConsoleLogger.h"
+﻿#include "ConsoleSink.h"
 /* Boost */
 #include <boost/make_shared.hpp>
 #include <boost/log/common.hpp>
@@ -16,7 +16,7 @@
 #include <boost/log/attributes/current_thread_id.hpp>
 #include <boost/log/attributes/current_process_name.hpp>
 /* Original */
-#include "Setting.h"
+#include "GlobalLogger.h"
 
 namespace Log{
 	namespace Console{
@@ -72,7 +72,7 @@ namespace Log{
 			return frontend;
 		}
 
-		void ConfigureLogger( void )
+		void ConfigureSink()
 		{
 			auto backsink = CreateBacksink();
 			auto frontsink = CreateFrontsink( backsink );

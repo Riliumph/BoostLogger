@@ -1,4 +1,4 @@
-#include "Setting.h"
+#include "GlobalLogger.h"
 /* STL */
 #include <ostream>
 #include <string>
@@ -10,8 +10,7 @@
 #include <boost/log/attributes/current_process_name.hpp>
 #include <boost/log/sources/severity_logger.hpp>
 //ORIGINAL
-#include "e_cast.hpp"
-#include "ConsoleLogger.h"
+#include "Utility/e_cast.hpp"
 
 namespace Log{
 	namespace src = boost::log::sources;
@@ -19,9 +18,11 @@ namespace Log{
 	namespace{
 		const std::string LV_NAME[enum_cast( Log::Lv::NUM )] = { "Debug","Info","Warn","Error","Fatal" };
 	}
+
 	/**
-	 * Initialize logger
+	 * Construct logger
 	 *
+	 * @param g_logger [i] class name
 	 */
 	BOOST_LOG_GLOBAL_LOGGER_INIT( g_logger, src::severity_logger_mt<Log::Lv> )
 	{
@@ -37,15 +38,10 @@ namespace Log{
 		return std::move( r );
 	}
 
-	void BootLogSystem()
-	{
-		Console::ConfigureLogger();
-	}
-
 	std::ostream& operator<< ( std::ostream& os, const Log::Lv& level )
 	{
 		assert( level != Log::Lv::NUM && "Detect illegal log level" );
 		os << LV_NAME[static_enum_cast( level )];
 		return os;
 	}
-}
+}// namespace Log

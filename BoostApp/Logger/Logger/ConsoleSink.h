@@ -1,4 +1,4 @@
-﻿#ifndef INCLUDE_CONSOLE_LOGGER_H
+﻿#ifndef INCLUDE_CONSOLE_SINK_H
 #define INCLUDE_CONSOLE_LOGGER_H
 namespace Log{
 	namespace Console{
@@ -8,8 +8,7 @@ namespace Log{
 		 * Create backsink & frontsink
 		 * Add sink to boost log core
 		 */
-		void ConfigureLogger();
+		void ConfigureSink();
 	}// namespace Console
 }// namespace Log
-
-#endif// INCLUDE_CONSOLE_LOGGER_H
+#endif// INCLUDE_CONSOLE_SINK_H

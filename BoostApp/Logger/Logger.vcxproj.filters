@@ -12,18 +12,24 @@
     <Filter Include="ソース ファイル\Logger">
       <UniqueIdentifier>{05cc660a-8c17-4b91-84b1-11a40fc919ac}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ソース ファイル\Utility">
+      <UniqueIdentifier>{6342fe5c-5215-4742-ab80-68ec10ebd3af}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="e_cast.hpp">
-      <Filter>ソース ファイル</Filter>
+      <Filter>ソース ファイル\Utility</Filter>
     </ClInclude>
-    <ClInclude Include="Logger\ConsoleLogger.h">
+    <ClInclude Include="Logger\ConsoleSink.h">
       <Filter>ソース ファイル\Logger</Filter>
     </ClInclude>
-    <ClInclude Include="Logger\Setting.h">
+    <ClInclude Include="Logger\GlobalLogger.h">
       <Filter>ソース ファイル\Logger</Filter>
     </ClInclude>
-    <ClInclude Include="Logger\Logger.h">
+    <ClInclude Include="Logger\System.h">
+      <Filter>ソース ファイル\Logger</Filter>
+    </ClInclude>
+    <ClInclude Include="Logger\SeverityType.h">
       <Filter>ソース ファイル\Logger</Filter>
     </ClInclude>
   </ItemGroup>
@@ -31,10 +37,13 @@
     <ClCompile Include="main.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="Logger\ConsoleLogger.cpp">
+    <ClCompile Include="Logger\ConsoleSink.cpp">
       <Filter>ソース ファイル\Logger</Filter>
     </ClCompile>
-    <ClCompile Include="Logger\Setting.cpp">
+    <ClCompile Include="Logger\GlobalLogger.cpp">
+      <Filter>ソース ファイル\Logger</Filter>
+    </ClCompile>
+    <ClCompile Include="Logger\System.cpp">
       <Filter>ソース ファイル\Logger</Filter>
     </ClCompile>
   </ItemGroup>
