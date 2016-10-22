@@ -16,7 +16,7 @@
 #include <boost/log/attributes/current_thread_id.hpp>
 #include <boost/log/attributes/current_process_name.hpp>
 /* Original */
-#include "Setting.h"
+#include "GlobalLogger.h"
 
 namespace Log{
 	namespace Console{

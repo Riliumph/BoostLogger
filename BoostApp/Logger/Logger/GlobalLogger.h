@@ -1,5 +1,5 @@
-﻿#ifndef INCLUDE_LOGGER_SETTING_H
-#define INCLUDE_LOGGER_SETTING_H
+﻿#ifndef INCLUDE_GLOBAL_LOGGER_H
+#define INCLUDE_GLOBAL_LOGGER_H
 /* Boost */
 #include <boost/log/sources/global_logger_storage.hpp>	// for BOOST_LOG_GLOBAL_LOGGER
 #include <boost/log/sources/severity_logger.hpp>		// for severity_logger
@@ -13,29 +13,22 @@ namespace Log{
 	}Lv;
 
 	/**
-	 * Register keyword
+	 * Declare keyword
 	 *
 	 * define struct severity
-	 * @param severity [i] register struct name
+	 * @param severity [i] declare struct name
 	 * @param "severity" [i] struct attribute name
 	 * @param Log::Lv [i] instance tag
 	 */
 	BOOST_LOG_ATTRIBUTE_KEYWORD( severity, "Severity", Log::Lv );
 
 	/**
-	 * Register logger
+	 * Declare logger
 	 *
-	 * Define struct glob_logger
-	 * @param glob_logger [i] struct name
+	 * @param g_logger [i] struct name
 	 * @param severity_logger_mt [i] logger type
 	 */
 	BOOST_LOG_GLOBAL_LOGGER( g_logger, boost::log::sources::severity_logger_mt<Log::Lv> )
-
-	/**
-	 * Boot up log system
-	 * reflect log config after this method execution
-	 */
-	void BootLogSystem();
 
 	/**
 	 * output operator
@@ -46,4 +39,4 @@ namespace Log{
 	 */
 	std::ostream& operator<< ( std::ostream& os, const Log::Lv &level );
 }// namespace Log
-#endif// INCLUDE_LOGGER_SETTING_H
+#endif// INCLUDE_GLOBAL_LOGGER_H
