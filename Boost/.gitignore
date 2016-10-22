@@ -1,0 +1,3 @@
+## Please commit the zip file instead of a binary file for the capacity limit of the github
+*.lib
+*.dll

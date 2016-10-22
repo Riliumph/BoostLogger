@@ -1,0 +1,1609 @@
+Performing configuration checks
+
+    - 32-bit                   : yes (cached)
+    - arm                      : no  (cached)
+    - mips1                    : no  (cached)
+    - power                    : no  (cached)
+    - sparc                    : no  (cached)
+    - x86                      : yes (cached)
+
+Building the Boost C++ Libraries.
+
+
+    - symlinks supported       : yes (cached)
+    - C++11 mutex              : yes (cached)
+    - has_icu builds           : no  (cached)
+warning: Graph library does not contain MPI-based parallel components.
+note: to enable them, add "using mpi ;" to your user-config.jam
+    - zlib                     : no  (cached)
+    - iconv (libc)             : no  (cached)
+    - iconv (separate)         : no  (cached)
+    - icu                      : no  (cached)
+    - icu (lib64)              : no  (cached)
+    - compiler-supports-visibility : no  (cached)
+    - message-compiler         : yes (cached)
+    - compiler-supports-ssse3  : yes (cached)
+    - compiler-supports-avx2   : yes (cached)
+    - gcc visibility           : no  (cached)
+    - long double support      : yes (cached)
+warning: skipping optional Message Passing Interface (MPI) library.
+note: to enable MPI support, add "using mpi ;" to user-config.jam.
+note: to suppress this message, pass "--without-mpi" to bjam.
+note: otherwise, you can safely ignore this message.
+    - zlib                     : no  (cached)
+
+Component configuration:
+
+    - atomic                   : building
+    - chrono                   : building
+    - container                : building
+    - context                  : building
+    - coroutine                : building
+    - coroutine2               : building
+    - date_time                : building
+    - exception                : building
+    - filesystem               : building
+    - graph                    : building
+    - graph_parallel           : building
+    - iostreams                : building
+    - locale                   : building
+    - log                      : building
+    - math                     : building
+    - metaparse                : building
+    - mpi                      : building
+    - program_options          : building
+    - python                   : building
+    - random                   : building
+    - regex                    : building
+    - serialization            : building
+    - signals                  : building
+    - system                   : building
+    - test                     : building
+    - thread                   : building
+    - timer                    : building
+    - type_erasure             : building
+    - wave                     : building
+
+...patience...
+...patience...
+...patience...
+...patience...
+...patience...
+...patience...
+...found 17565 targets...
+...updating 630 targets...
+common.mkdir stage\x86\lib
+common.copy stage\x86\lib\libboost_atomic-vc140-mt-sgd-1_61.lib
+bin.v2\libs\atomic\build\msvc-14.0\debug\link-static\runtime-link-static\threading-multi\libboost_atomic-vc140-mt-sgd-1_61.lib
+        1 個のファイルをコピーしました。
+common.copy stage\x86\lib\libboost_system-vc140-mt-sgd-1_61.lib
+bin.v2\libs\system\build\msvc-14.0\debug\link-static\runtime-link-static\threading-multi\libboost_system-vc140-mt-sgd-1_61.lib
+        1 個のファイルをコピーしました。
+common.copy stage\x86\lib\libboost_chrono-vc140-mt-sgd-1_61.lib
+bin.v2\libs\chrono\build\msvc-14.0\debug\link-static\runtime-link-static\threading-multi\libboost_chrono-vc140-mt-sgd-1_61.lib
+        1 個のファイルをコピーしました。
+common.copy stage\x86\lib\libboost_container-vc140-mt-sgd-1_61.lib
+bin.v2\libs\container\build\msvc-14.0\debug\link-static\runtime-link-static\threading-multi\libboost_container-vc140-mt-sgd-1_61.lib
+        1 個のファイルをコピーしました。
+common.copy stage\x86\lib\libboost_context-vc140-mt-sgd-1_61.lib
+bin.v2\libs\context\build\msvc-14.0\debug\link-static\runtime-link-static\threading-multi\libboost_context-vc140-mt-sgd-1_61.lib
+        1 個のファイルをコピーしました。
+common.copy stage\x86\lib\libboost_thread-vc140-mt-sgd-1_61.lib
+bin.v2\libs\thread\build\msvc-14.0\debug\link-static\runtime-link-static\threading-multi\libboost_thread-vc140-mt-sgd-1_61.lib
+        1 個のファイルをコピーしました。
+compile-c-c++ bin.v2\libs\python\build\msvc-14.0\debug\link-static\runtime-link-static\threading-multi\numeric.obj
+numeric.cpp
+T:\Downloads\boost_1_61_0\boost/python/detail/wrap_python.hpp(50): fatal error C1083: include ファイルを開けません。'pyconfig.h':No such file or directory
+
+    call "C:\Users\Kohsuke\AppData\Local\Temp\b2_msvc_14.0_vcvarsall_x86.cmd" >nul
+cl /Zm800 -nologo @"bin.v2\libs\python\build\msvc-14.0\debug\link-static\runtime-link-static\threading-multi\numeric.obj.rsp" 
+
+...failed compile-c-c++ bin.v2\libs\python\build\msvc-14.0\debug\link-static\runtime-link-static\threading-multi\numeric.obj...
+common.copy stage\x86\lib\libboost_coroutine-vc140-mt-sgd-1_61.lib
+bin.v2\libs\coroutine\build\msvc-14.0\debug\link-static\runtime-link-static\threading-multi\libboost_coroutine-vc140-mt-sgd-1_61.lib
+        1 個のファイルをコピーしました。
+compile-c-c++ bin.v2\libs\python\build\msvc-14.0\debug\link-static\runtime-link-static\threading-multi\long.obj
+long.cpp
+T:\Downloads\boost_1_61_0\boost/python/detail/wrap_python.hpp(50): fatal error C1083: include ファイルを開けません。'pyconfig.h':No such file or directory
+
+    call "C:\Users\Kohsuke\AppData\Local\Temp\b2_msvc_14.0_vcvarsall_x86.cmd" >nul
+cl /Zm800 -nologo @"bin.v2\libs\python\build\msvc-14.0\debug\link-static\runtime-link-static\threading-multi\long.obj.rsp" 
+
+...failed compile-c-c++ bin.v2\libs\python\build\msvc-14.0\debug\link-static\runtime-link-static\threading-multi\long.obj...
+common.copy stage\x86\lib\libboost_date_time-vc140-mt-sgd-1_61.lib
+bin.v2\libs\date_time\build\msvc-14.0\debug\link-static\runtime-link-static\threading-multi\libboost_date_time-vc140-mt-sgd-1_61.lib
+        1 個のファイルをコピーしました。
+compile-c-c++ bin.v2\libs\python\build\msvc-14.0\debug\link-static\runtime-link-static\threading-multi\list.obj
+list.cpp
+T:\Downloads\boost_1_61_0\boost/python/detail/wrap_python.hpp(50): fatal error C1083: include ファイルを開けません。'pyconfig.h':No such file or directory
+
+    call "C:\Users\Kohsuke\AppData\Local\Temp\b2_msvc_14.0_vcvarsall_x86.cmd" >nul
+cl /Zm800 -nologo @"bin.v2\libs\python\build\msvc-14.0\debug\link-static\runtime-link-static\threading-multi\list.obj.rsp" 
+
+...failed compile-c-c++ bin.v2\libs\python\build\msvc-14.0\debug\link-static\runtime-link-static\threading-multi\list.obj...
+common.copy stage\x86\lib\libboost_exception-vc140-mt-sgd-1_61.lib
+bin.v2\libs\exception\build\msvc-14.0\debug\link-static\runtime-link-static\threading-multi\libboost_exception-vc140-mt-sgd-1_61.lib
+        1 個のファイルをコピーしました。
+common.copy stage\x86\lib\libboost_filesystem-vc140-mt-sgd-1_61.lib
+bin.v2\libs\filesystem\build\msvc-14.0\debug\link-static\runtime-link-static\threading-multi\libboost_filesystem-vc140-mt-sgd-1_61.lib
+        1 個のファイルをコピーしました。
+common.copy stage\x86\lib\libboost_iostreams-vc140-mt-sgd-1_61.lib
+bin.v2\libs\iostreams\build\msvc-14.0\debug\link-static\runtime-link-static\threading-multi\libboost_iostreams-vc140-mt-sgd-1_61.lib
+        1 個のファイルをコピーしました。
+common.copy stage\x86\lib\libboost_graph-vc140-mt-sgd-1_61.lib
+bin.v2\libs\graph\build\msvc-14.0\debug\link-static\runtime-link-static\threading-multi\libboost_graph-vc140-mt-sgd-1_61.lib
+        1 個のファイルをコピーしました。
+common.copy stage\x86\lib\libboost_regex-vc140-mt-sgd-1_61.lib
+bin.v2\libs\regex\build\msvc-14.0\debug\link-static\runtime-link-static\threading-multi\libboost_regex-vc140-mt-sgd-1_61.lib
+        1 個のファイルをコピーしました。
+common.copy stage\x86\lib\libboost_locale-vc140-mt-sgd-1_61.lib
+bin.v2\libs\locale\build\msvc-14.0\debug\link-static\runtime-link-static\threading-multi\libboost_locale-vc140-mt-sgd-1_61.lib
+        1 個のファイルをコピーしました。
+common.copy stage\x86\lib\libboost_log-vc140-mt-sgd-1_61.lib
+bin.v2\libs\log\build\msvc-14.0\debug\link-static\log-api-winnt\runtime-link-static\threading-multi\libboost_log-vc140-mt-sgd-1_61.lib
+        1 個のファイルをコピーしました。
+common.copy stage\x86\lib\libboost_math_tr1f-vc140-mt-sgd-1_61.lib
+bin.v2\libs\math\build\msvc-14.0\debug\link-static\runtime-link-static\threading-multi\libboost_math_tr1f-vc140-mt-sgd-1_61.lib
+        1 個のファイルをコピーしました。
+common.copy stage\x86\lib\libboost_math_tr1-vc140-mt-sgd-1_61.lib
+bin.v2\libs\math\build\msvc-14.0\debug\link-static\runtime-link-static\threading-multi\libboost_math_tr1-vc140-mt-sgd-1_61.lib
+        1 個のファイルをコピーしました。
+common.copy stage\x86\lib\libboost_math_c99f-vc140-mt-sgd-1_61.lib
+bin.v2\libs\math\build\msvc-14.0\debug\link-static\runtime-link-static\threading-multi\libboost_math_c99f-vc140-mt-sgd-1_61.lib
+        1 個のファイルをコピーしました。
+common.copy stage\x86\lib\libboost_math_c99-vc140-mt-sgd-1_61.lib
+bin.v2\libs\math\build\msvc-14.0\debug\link-static\runtime-link-static\threading-multi\libboost_math_c99-vc140-mt-sgd-1_61.lib
+        1 個のファイルをコピーしました。
+common.copy stage\x86\lib\libboost_log_setup-vc140-mt-sgd-1_61.lib
+bin.v2\libs\log\build\msvc-14.0\debug\link-static\log-api-winnt\runtime-link-static\threading-multi\libboost_log_setup-vc140-mt-sgd-1_61.lib
+        1 個のファイルをコピーしました。
+common.copy stage\x86\lib\libboost_timer-vc140-mt-sgd-1_61.lib
+bin.v2\libs\timer\build\msvc-14.0\debug\link-static\runtime-link-static\threading-multi\libboost_timer-vc140-mt-sgd-1_61.lib
+        1 個のファイルをコピーしました。
+common.copy stage\x86\lib\libboost_math_tr1l-vc140-mt-sgd-1_61.lib
+bin.v2\libs\math\build\msvc-14.0\debug\link-static\runtime-link-static\threading-multi\libboost_math_tr1l-vc140-mt-sgd-1_61.lib
+        1 個のファイルをコピーしました。
+common.copy stage\x86\lib\libboost_math_c99l-vc140-mt-sgd-1_61.lib
+bin.v2\libs\math\build\msvc-14.0\debug\link-static\runtime-link-static\threading-multi\libboost_math_c99l-vc140-mt-sgd-1_61.lib
+        1 個のファイルをコピーしました。
+common.copy stage\x86\lib\libboost_program_options-vc140-mt-sgd-1_61.lib
+bin.v2\libs\program_options\build\msvc-14.0\debug\link-static\runtime-link-static\threading-multi\libboost_program_options-vc140-mt-sgd-1_61.lib
+        1 個のファイルをコピーしました。
+common.copy stage\x86\lib\libboost_unit_test_framework-vc140-mt-sgd-1_61.lib
+bin.v2\libs\test\build\msvc-14.0\debug\link-static\runtime-link-static\threading-multi\libboost_unit_test_framework-vc140-mt-sgd-1_61.lib
+        1 個のファイルをコピーしました。
+compile-c-c++ bin.v2\libs\python\build\msvc-14.0\debug\link-static\runtime-link-static\threading-multi\dict.obj
+dict.cpp
+T:\Downloads\boost_1_61_0\boost/python/detail/wrap_python.hpp(50): fatal error C1083: include ファイルを開けません。'pyconfig.h':No such file or directory
+
+    call "C:\Users\Kohsuke\AppData\Local\Temp\b2_msvc_14.0_vcvarsall_x86.cmd" >nul
+cl /Zm800 -nologo @"bin.v2\libs\python\build\msvc-14.0\debug\link-static\runtime-link-static\threading-multi\dict.obj.rsp" 
+
+...failed compile-c-c++ bin.v2\libs\python\build\msvc-14.0\debug\link-static\runtime-link-static\threading-multi\dict.obj...
+compile-c-c++ bin.v2\libs\python\build\msvc-14.0\debug\link-static\runtime-link-static\threading-multi\tuple.obj
+tuple.cpp
+T:\Downloads\boost_1_61_0\boost/python/detail/wrap_python.hpp(50): fatal error C1083: include ファイルを開けません。'pyconfig.h':No such file or directory
+
+    call "C:\Users\Kohsuke\AppData\Local\Temp\b2_msvc_14.0_vcvarsall_x86.cmd" >nul
+cl /Zm800 -nologo @"bin.v2\libs\python\build\msvc-14.0\debug\link-static\runtime-link-static\threading-multi\tuple.obj.rsp" 
+
+...failed compile-c-c++ bin.v2\libs\python\build\msvc-14.0\debug\link-static\runtime-link-static\threading-multi\tuple.obj...
+compile-c-c++ bin.v2\libs\python\build\msvc-14.0\debug\link-static\runtime-link-static\threading-multi\str.obj
+str.cpp
+T:\Downloads\boost_1_61_0\boost/python/detail/wrap_python.hpp(50): fatal error C1083: include ファイルを開けません。'pyconfig.h':No such file or directory
+
+    call "C:\Users\Kohsuke\AppData\Local\Temp\b2_msvc_14.0_vcvarsall_x86.cmd" >nul
+cl /Zm800 -nologo @"bin.v2\libs\python\build\msvc-14.0\debug\link-static\runtime-link-static\threading-multi\str.obj.rsp" 
+
+...failed compile-c-c++ bin.v2\libs\python\build\msvc-14.0\debug\link-static\runtime-link-static\threading-multi\str.obj...
+compile-c-c++ bin.v2\libs\python\build\msvc-14.0\debug\link-static\runtime-link-static\threading-multi\slice.obj
+slice.cpp
+T:\Downloads\boost_1_61_0\boost/python/detail/wrap_python.hpp(50): fatal error C1083: include ファイルを開けません。'pyconfig.h':No such file or directory
+
+    call "C:\Users\Kohsuke\AppData\Local\Temp\b2_msvc_14.0_vcvarsall_x86.cmd" >nul
+cl /Zm800 -nologo @"bin.v2\libs\python\build\msvc-14.0\debug\link-static\runtime-link-static\threading-multi\slice.obj.rsp" 
+
+...failed compile-c-c++ bin.v2\libs\python\build\msvc-14.0\debug\link-static\runtime-link-static\threading-multi\slice.obj...
+compile-c-c++ bin.v2\libs\python\build\msvc-14.0\debug\link-static\runtime-link-static\threading-multi\converter\from_python.obj
+from_python.cpp
+T:\Downloads\boost_1_61_0\boost/python/detail/wrap_python.hpp(50): fatal error C1083: include ファイルを開けません。'pyconfig.h':No such file or directory
+
+    call "C:\Users\Kohsuke\AppData\Local\Temp\b2_msvc_14.0_vcvarsall_x86.cmd" >nul
+cl /Zm800 -nologo @"bin.v2\libs\python\build\msvc-14.0\debug\link-static\runtime-link-static\threading-multi\converter\from_python.obj.rsp" 
+
+...failed compile-c-c++ bin.v2\libs\python\build\msvc-14.0\debug\link-static\runtime-link-static\threading-multi\converter\from_python.obj...
+compile-c-c++ bin.v2\libs\python\build\msvc-14.0\debug\link-static\runtime-link-static\threading-multi\converter\registry.obj
+registry.cpp
+T:\Downloads\boost_1_61_0\boost/python/detail/wrap_python.hpp(50): fatal error C1083: include ファイルを開けません。'pyconfig.h':No such file or directory
+
+    call "C:\Users\Kohsuke\AppData\Local\Temp\b2_msvc_14.0_vcvarsall_x86.cmd" >nul
+cl /Zm800 -nologo @"bin.v2\libs\python\build\msvc-14.0\debug\link-static\runtime-link-static\threading-multi\converter\registry.obj.rsp" 
+
+...failed compile-c-c++ bin.v2\libs\python\build\msvc-14.0\debug\link-static\runtime-link-static\threading-multi\converter\registry.obj...
+compile-c-c++ bin.v2\libs\python\build\msvc-14.0\debug\link-static\runtime-link-static\threading-multi\converter\type_id.obj
+type_id.cpp
+T:\Downloads\boost_1_61_0\boost/python/detail/wrap_python.hpp(50): fatal error C1083: include ファイルを開けません。'pyconfig.h':No such file or directory
+
+    call "C:\Users\Kohsuke\AppData\Local\Temp\b2_msvc_14.0_vcvarsall_x86.cmd" >nul
+cl /Zm800 -nologo @"bin.v2\libs\python\build\msvc-14.0\debug\link-static\runtime-link-static\threading-multi\converter\type_id.obj.rsp" 
+
+...failed compile-c-c++ bin.v2\libs\python\build\msvc-14.0\debug\link-static\runtime-link-static\threading-multi\converter\type_id.obj...
+compile-c-c++ bin.v2\libs\python\build\msvc-14.0\debug\link-static\runtime-link-static\threading-multi\object\enum.obj
+enum.cpp
+T:\Downloads\boost_1_61_0\boost/python/detail/wrap_python.hpp(50): fatal error C1083: include ファイルを開けません。'pyconfig.h':No such file or directory
+
+    call "C:\Users\Kohsuke\AppData\Local\Temp\b2_msvc_14.0_vcvarsall_x86.cmd" >nul
+cl /Zm800 -nologo @"bin.v2\libs\python\build\msvc-14.0\debug\link-static\runtime-link-static\threading-multi\object\enum.obj.rsp" 
+
+...failed compile-c-c++ bin.v2\libs\python\build\msvc-14.0\debug\link-static\runtime-link-static\threading-multi\object\enum.obj...
+compile-c-c++ bin.v2\libs\python\build\msvc-14.0\debug\link-static\runtime-link-static\threading-multi\object\class.obj
+class.cpp
+T:\Downloads\boost_1_61_0\boost/python/detail/wrap_python.hpp(50): fatal error C1083: include ファイルを開けません。'pyconfig.h':No such file or directory
+
+    call "C:\Users\Kohsuke\AppData\Local\Temp\b2_msvc_14.0_vcvarsall_x86.cmd" >nul
+cl /Zm800 -nologo @"bin.v2\libs\python\build\msvc-14.0\debug\link-static\runtime-link-static\threading-multi\object\class.obj.rsp" 
+
+...failed compile-c-c++ bin.v2\libs\python\build\msvc-14.0\debug\link-static\runtime-link-static\threading-multi\object\class.obj...
+compile-c-c++ bin.v2\libs\python\build\msvc-14.0\debug\link-static\runtime-link-static\threading-multi\object\function.obj
+function.cpp
+T:\Downloads\boost_1_61_0\boost/python/detail/wrap_python.hpp(50): fatal error C1083: include ファイルを開けません。'pyconfig.h':No such file or directory
+
+    call "C:\Users\Kohsuke\AppData\Local\Temp\b2_msvc_14.0_vcvarsall_x86.cmd" >nul
+cl /Zm800 -nologo @"bin.v2\libs\python\build\msvc-14.0\debug\link-static\runtime-link-static\threading-multi\object\function.obj.rsp" 
+
+...failed compile-c-c++ bin.v2\libs\python\build\msvc-14.0\debug\link-static\runtime-link-static\threading-multi\object\function.obj...
+compile-c-c++ bin.v2\libs\python\build\msvc-14.0\debug\link-static\runtime-link-static\threading-multi\object\inheritance.obj
+inheritance.cpp
+T:\Downloads\boost_1_61_0\boost/python/detail/wrap_python.hpp(50): fatal error C1083: include ファイルを開けません。'pyconfig.h':No such file or directory
+
+    call "C:\Users\Kohsuke\AppData\Local\Temp\b2_msvc_14.0_vcvarsall_x86.cmd" >nul
+cl /Zm800 -nologo @"bin.v2\libs\python\build\msvc-14.0\debug\link-static\runtime-link-static\threading-multi\object\inheritance.obj.rsp" 
+
+...failed compile-c-c++ bin.v2\libs\python\build\msvc-14.0\debug\link-static\runtime-link-static\threading-multi\object\inheritance.obj...
+compile-c-c++ bin.v2\libs\python\build\msvc-14.0\debug\link-static\runtime-link-static\threading-multi\object\life_support.obj
+life_support.cpp
+T:\Downloads\boost_1_61_0\boost/python/detail/wrap_python.hpp(50): fatal error C1083: include ファイルを開けません。'pyconfig.h':No such file or directory
+
+    call "C:\Users\Kohsuke\AppData\Local\Temp\b2_msvc_14.0_vcvarsall_x86.cmd" >nul
+cl /Zm800 -nologo @"bin.v2\libs\python\build\msvc-14.0\debug\link-static\runtime-link-static\threading-multi\object\life_support.obj.rsp" 
+
+...failed compile-c-c++ bin.v2\libs\python\build\msvc-14.0\debug\link-static\runtime-link-static\threading-multi\object\life_support.obj...
+compile-c-c++ bin.v2\libs\python\build\msvc-14.0\debug\link-static\runtime-link-static\threading-multi\object\pickle_support.obj
+pickle_support.cpp
+T:\Downloads\boost_1_61_0\boost/python/detail/wrap_python.hpp(50): fatal error C1083: include ファイルを開けません。'pyconfig.h':No such file or directory
+
+    call "C:\Users\Kohsuke\AppData\Local\Temp\b2_msvc_14.0_vcvarsall_x86.cmd" >nul
+cl /Zm800 -nologo @"bin.v2\libs\python\build\msvc-14.0\debug\link-static\runtime-link-static\threading-multi\object\pickle_support.obj.rsp" 
+
+...failed compile-c-c++ bin.v2\libs\python\build\msvc-14.0\debug\link-static\runtime-link-static\threading-multi\object\pickle_support.obj...
+compile-c-c++ bin.v2\libs\python\build\msvc-14.0\debug\link-static\runtime-link-static\threading-multi\errors.obj
+errors.cpp
+T:\Downloads\boost_1_61_0\boost/python/detail/wrap_python.hpp(50): fatal error C1083: include ファイルを開けません。'pyconfig.h':No such file or directory
+
+    call "C:\Users\Kohsuke\AppData\Local\Temp\b2_msvc_14.0_vcvarsall_x86.cmd" >nul
+cl /Zm800 -nologo @"bin.v2\libs\python\build\msvc-14.0\debug\link-static\runtime-link-static\threading-multi\errors.obj.rsp" 
+
+...failed compile-c-c++ bin.v2\libs\python\build\msvc-14.0\debug\link-static\runtime-link-static\threading-multi\errors.obj...
+compile-c-c++ bin.v2\libs\python\build\msvc-14.0\debug\link-static\runtime-link-static\threading-multi\module.obj
+module.cpp
+T:\Downloads\boost_1_61_0\boost/python/detail/wrap_python.hpp(50): fatal error C1083: include ファイルを開けません。'pyconfig.h':No such file or directory
+
+    call "C:\Users\Kohsuke\AppData\Local\Temp\b2_msvc_14.0_vcvarsall_x86.cmd" >nul
+cl /Zm800 -nologo @"bin.v2\libs\python\build\msvc-14.0\debug\link-static\runtime-link-static\threading-multi\module.obj.rsp" 
+
+...failed compile-c-c++ bin.v2\libs\python\build\msvc-14.0\debug\link-static\runtime-link-static\threading-multi\module.obj...
+compile-c-c++ bin.v2\libs\python\build\msvc-14.0\debug\link-static\runtime-link-static\threading-multi\converter\builtin_converters.obj
+builtin_converters.cpp
+T:\Downloads\boost_1_61_0\boost/python/detail/wrap_python.hpp(50): fatal error C1083: include ファイルを開けません。'pyconfig.h':No such file or directory
+
+    call "C:\Users\Kohsuke\AppData\Local\Temp\b2_msvc_14.0_vcvarsall_x86.cmd" >nul
+cl /Zm800 -nologo @"bin.v2\libs\python\build\msvc-14.0\debug\link-static\runtime-link-static\threading-multi\converter\builtin_converters.obj.rsp" 
+
+...failed compile-c-c++ bin.v2\libs\python\build\msvc-14.0\debug\link-static\runtime-link-static\threading-multi\converter\builtin_converters.obj...
+compile-c-c++ bin.v2\libs\python\build\msvc-14.0\debug\link-static\runtime-link-static\threading-multi\converter\arg_to_python_base.obj
+arg_to_python_base.cpp
+T:\Downloads\boost_1_61_0\boost/python/detail/wrap_python.hpp(50): fatal error C1083: include ファイルを開けません。'pyconfig.h':No such file or directory
+
+    call "C:\Users\Kohsuke\AppData\Local\Temp\b2_msvc_14.0_vcvarsall_x86.cmd" >nul
+cl /Zm800 -nologo @"bin.v2\libs\python\build\msvc-14.0\debug\link-static\runtime-link-static\threading-multi\converter\arg_to_python_base.obj.rsp" 
+
+...failed compile-c-c++ bin.v2\libs\python\build\msvc-14.0\debug\link-static\runtime-link-static\threading-multi\converter\arg_to_python_base.obj...
+compile-c-c++ bin.v2\libs\python\build\msvc-14.0\debug\link-static\runtime-link-static\threading-multi\object\iterator.obj
+iterator.cpp
+T:\Downloads\boost_1_61_0\boost/python/detail/wrap_python.hpp(50): fatal error C1083: include ファイルを開けません。'pyconfig.h':No such file or directory
+
+    call "C:\Users\Kohsuke\AppData\Local\Temp\b2_msvc_14.0_vcvarsall_x86.cmd" >nul
+cl /Zm800 -nologo @"bin.v2\libs\python\build\msvc-14.0\debug\link-static\runtime-link-static\threading-multi\object\iterator.obj.rsp" 
+
+...failed compile-c-c++ bin.v2\libs\python\build\msvc-14.0\debug\link-static\runtime-link-static\threading-multi\object\iterator.obj...
+compile-c-c++ bin.v2\libs\python\build\msvc-14.0\debug\link-static\runtime-link-static\threading-multi\object\stl_iterator.obj
+stl_iterator.cpp
+T:\Downloads\boost_1_61_0\boost/python/detail/wrap_python.hpp(50): fatal error C1083: include ファイルを開けません。'pyconfig.h':No such file or directory
+
+    call "C:\Users\Kohsuke\AppData\Local\Temp\b2_msvc_14.0_vcvarsall_x86.cmd" >nul
+cl /Zm800 -nologo @"bin.v2\libs\python\build\msvc-14.0\debug\link-static\runtime-link-static\threading-multi\object\stl_iterator.obj.rsp" 
+
+...failed compile-c-c++ bin.v2\libs\python\build\msvc-14.0\debug\link-static\runtime-link-static\threading-multi\object\stl_iterator.obj...
+compile-c-c++ bin.v2\libs\python\build\msvc-14.0\debug\link-static\runtime-link-static\threading-multi\object_protocol.obj
+object_protocol.cpp
+T:\Downloads\boost_1_61_0\boost/python/detail/wrap_python.hpp(50): fatal error C1083: include ファイルを開けません。'pyconfig.h':No such file or directory
+
+    call "C:\Users\Kohsuke\AppData\Local\Temp\b2_msvc_14.0_vcvarsall_x86.cmd" >nul
+cl /Zm800 -nologo @"bin.v2\libs\python\build\msvc-14.0\debug\link-static\runtime-link-static\threading-multi\object_protocol.obj.rsp" 
+
+...failed compile-c-c++ bin.v2\libs\python\build\msvc-14.0\debug\link-static\runtime-link-static\threading-multi\object_protocol.obj...
+compile-c-c++ bin.v2\libs\python\build\msvc-14.0\debug\link-static\runtime-link-static\threading-multi\object_operators.obj
+object_operators.cpp
+T:\Downloads\boost_1_61_0\boost/python/detail/wrap_python.hpp(50): fatal error C1083: include ファイルを開けません。'pyconfig.h':No such file or directory
+
+    call "C:\Users\Kohsuke\AppData\Local\Temp\b2_msvc_14.0_vcvarsall_x86.cmd" >nul
+cl /Zm800 -nologo @"bin.v2\libs\python\build\msvc-14.0\debug\link-static\runtime-link-static\threading-multi\object_operators.obj.rsp" 
+
+...failed compile-c-c++ bin.v2\libs\python\build\msvc-14.0\debug\link-static\runtime-link-static\threading-multi\object_operators.obj...
+compile-c-c++ bin.v2\libs\python\build\msvc-14.0\debug\link-static\runtime-link-static\threading-multi\wrapper.obj
+wrapper.cpp
+T:\Downloads\boost_1_61_0\boost/python/detail/wrap_python.hpp(50): fatal error C1083: include ファイルを開けません。'pyconfig.h':No such file or directory
+
+    call "C:\Users\Kohsuke\AppData\Local\Temp\b2_msvc_14.0_vcvarsall_x86.cmd" >nul
+cl /Zm800 -nologo @"bin.v2\libs\python\build\msvc-14.0\debug\link-static\runtime-link-static\threading-multi\wrapper.obj.rsp" 
+
+...failed compile-c-c++ bin.v2\libs\python\build\msvc-14.0\debug\link-static\runtime-link-static\threading-multi\wrapper.obj...
+common.copy stage\x86\lib\libboost_random-vc140-mt-sgd-1_61.lib
+bin.v2\libs\random\build\msvc-14.0\debug\link-static\runtime-link-static\threading-multi\libboost_random-vc140-mt-sgd-1_61.lib
+        1 個のファイルをコピーしました。
+common.copy stage\x86\lib\libboost_serialization-vc140-mt-sgd-1_61.lib
+bin.v2\libs\serialization\build\msvc-14.0\debug\link-static\runtime-link-static\threading-multi\libboost_serialization-vc140-mt-sgd-1_61.lib
+        1 個のファイルをコピーしました。
+compile-c-c++ bin.v2\libs\python\build\msvc-14.0\debug\link-static\runtime-link-static\threading-multi\import.obj
+import.cpp
+T:\Downloads\boost_1_61_0\boost/python/detail/wrap_python.hpp(50): fatal error C1083: include ファイルを開けません。'pyconfig.h':No such file or directory
+
+    call "C:\Users\Kohsuke\AppData\Local\Temp\b2_msvc_14.0_vcvarsall_x86.cmd" >nul
+cl /Zm800 -nologo @"bin.v2\libs\python\build\msvc-14.0\debug\link-static\runtime-link-static\threading-multi\import.obj.rsp" 
+
+...failed compile-c-c++ bin.v2\libs\python\build\msvc-14.0\debug\link-static\runtime-link-static\threading-multi\import.obj...
+compile-c-c++ bin.v2\libs\python\build\msvc-14.0\debug\link-static\runtime-link-static\threading-multi\exec.obj
+exec.cpp
+T:\Downloads\boost_1_61_0\boost/python/detail/wrap_python.hpp(50): fatal error C1083: include ファイルを開けません。'pyconfig.h':No such file or directory
+
+    call "C:\Users\Kohsuke\AppData\Local\Temp\b2_msvc_14.0_vcvarsall_x86.cmd" >nul
+cl /Zm800 -nologo @"bin.v2\libs\python\build\msvc-14.0\debug\link-static\runtime-link-static\threading-multi\exec.obj.rsp" 
+
+...failed compile-c-c++ bin.v2\libs\python\build\msvc-14.0\debug\link-static\runtime-link-static\threading-multi\exec.obj...
+common.copy stage\x86\lib\libboost_signals-vc140-mt-sgd-1_61.lib
+bin.v2\libs\signals\build\msvc-14.0\debug\link-static\runtime-link-static\threading-multi\libboost_signals-vc140-mt-sgd-1_61.lib
+        1 個のファイルをコピーしました。
+compile-c-c++ bin.v2\libs\python\build\msvc-14.0\debug\link-static\runtime-link-static\threading-multi\object\function_doc_signature.obj
+function_doc_signature.cpp
+T:\Downloads\boost_1_61_0\boost/python/detail/wrap_python.hpp(50): fatal error C1083: include ファイルを開けません。'pyconfig.h':No such file or directory
+
+    call "C:\Users\Kohsuke\AppData\Local\Temp\b2_msvc_14.0_vcvarsall_x86.cmd" >nul
+cl /Zm800 -nologo @"bin.v2\libs\python\build\msvc-14.0\debug\link-static\runtime-link-static\threading-multi\object\function_doc_signature.obj.rsp" 
+
+...failed compile-c-c++ bin.v2\libs\python\build\msvc-14.0\debug\link-static\runtime-link-static\threading-multi\object\function_doc_signature.obj...
+...skipped <pbin.v2\libs\python\build\msvc-14.0\debug\link-static\runtime-link-static\threading-multi>libboost_python-vc140-mt-sgd-1_61.lib for lack of <pbin.v2\libs\python\build\msvc-14.0\debug\link-static\runtime-link-static\threading-multi>numeric.obj...
+...skipped <pstage\x86\lib>libboost_python-vc140-mt-sgd-1_61.lib for lack of <pbin.v2\libs\python\build\msvc-14.0\debug\link-static\runtime-link-static\threading-multi>libboost_python-vc140-mt-sgd-1_61.lib...
+common.copy stage\x86\lib\libboost_prg_exec_monitor-vc140-mt-sgd-1_61.lib
+bin.v2\libs\test\build\msvc-14.0\debug\link-static\runtime-link-static\threading-multi\libboost_prg_exec_monitor-vc140-mt-sgd-1_61.lib
+        1 個のファイルをコピーしました。
+common.copy stage\x86\lib\libboost_type_erasure-vc140-mt-sgd-1_61.lib
+bin.v2\libs\type_erasure\build\msvc-14.0\debug\link-static\runtime-link-static\threading-multi\libboost_type_erasure-vc140-mt-sgd-1_61.lib
+        1 個のファイルをコピーしました。
+msvc.archive bin.v2\libs\serialization\build\msvc-14.0\debug\link-static\runtime-link-static\threading-multi\libboost_wserialization-vc140-mt-sgd-1_61.lib
+common.copy stage\x86\lib\libboost_test_exec_monitor-vc140-mt-sgd-1_61.lib
+bin.v2\libs\test\build\msvc-14.0\debug\link-static\runtime-link-static\threading-multi\libboost_test_exec_monitor-vc140-mt-sgd-1_61.lib
+        1 個のファイルをコピーしました。
+common.mkdir bin.v2\libs\wave\build\msvc-14.0\debug\link-static\runtime-link-static\threading-multi\cpplexer\re2clex
+common.copy stage\x86\lib\libboost_wserialization-vc140-mt-sgd-1_61.lib
+bin.v2\libs\serialization\build\msvc-14.0\debug\link-static\runtime-link-static\threading-multi\libboost_wserialization-vc140-mt-sgd-1_61.lib
+        1 個のファイルをコピーしました。
+compile-c-c++ bin.v2\libs\wave\build\msvc-14.0\debug\link-static\runtime-link-static\threading-multi\wave_config_constant.obj
+wave_config_constant.cpp
+compile-c-c++ bin.v2\libs\wave\build\msvc-14.0\debug\link-static\runtime-link-static\threading-multi\token_ids.obj
+token_ids.cpp
+compile-c-c++ bin.v2\libs\wave\build\msvc-14.0\debug\link-static\runtime-link-static\threading-multi\cpplexer\re2clex\aq.obj
+aq.cpp
+compile-c-c++ bin.v2\libs\python\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\list.obj
+list.cpp
+.\boost/python/detail/wrap_python.hpp(50): fatal error C1083: include ファイルを開けません。'pyconfig.h':No such file or directory
+
+    call "C:\Users\Kohsuke\AppData\Local\Temp\b2_msvc_14.0_vcvarsall_x86.cmd" >nul
+cl /Zm800 -nologo @"bin.v2\libs\python\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\list.obj.rsp" 
+
+...failed compile-c-c++ bin.v2\libs\python\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\list.obj...
+compile-c-c++ bin.v2\libs\python\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\numeric.obj
+numeric.cpp
+.\boost/python/detail/wrap_python.hpp(50): fatal error C1083: include ファイルを開けません。'pyconfig.h':No such file or directory
+
+    call "C:\Users\Kohsuke\AppData\Local\Temp\b2_msvc_14.0_vcvarsall_x86.cmd" >nul
+cl /Zm800 -nologo @"bin.v2\libs\python\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\numeric.obj.rsp" 
+
+...failed compile-c-c++ bin.v2\libs\python\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\numeric.obj...
+compile-c-c++ bin.v2\libs\python\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\long.obj
+long.cpp
+.\boost/python/detail/wrap_python.hpp(50): fatal error C1083: include ファイルを開けません。'pyconfig.h':No such file or directory
+
+    call "C:\Users\Kohsuke\AppData\Local\Temp\b2_msvc_14.0_vcvarsall_x86.cmd" >nul
+cl /Zm800 -nologo @"bin.v2\libs\python\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\long.obj.rsp" 
+
+...failed compile-c-c++ bin.v2\libs\python\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\long.obj...
+compile-c-c++ bin.v2\libs\python\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\dict.obj
+dict.cpp
+.\boost/python/detail/wrap_python.hpp(50): fatal error C1083: include ファイルを開けません。'pyconfig.h':No such file or directory
+
+    call "C:\Users\Kohsuke\AppData\Local\Temp\b2_msvc_14.0_vcvarsall_x86.cmd" >nul
+cl /Zm800 -nologo @"bin.v2\libs\python\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\dict.obj.rsp" 
+
+...failed compile-c-c++ bin.v2\libs\python\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\dict.obj...
+compile-c-c++ bin.v2\libs\python\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\tuple.obj
+tuple.cpp
+.\boost/python/detail/wrap_python.hpp(50): fatal error C1083: include ファイルを開けません。'pyconfig.h':No such file or directory
+
+    call "C:\Users\Kohsuke\AppData\Local\Temp\b2_msvc_14.0_vcvarsall_x86.cmd" >nul
+cl /Zm800 -nologo @"bin.v2\libs\python\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\tuple.obj.rsp" 
+
+...failed compile-c-c++ bin.v2\libs\python\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\tuple.obj...
+common.mkdir bin.v2\libs\python\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\converter
+compile-c-c++ bin.v2\libs\python\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\str.obj
+str.cpp
+.\boost/python/detail/wrap_python.hpp(50): fatal error C1083: include ファイルを開けません。'pyconfig.h':No such file or directory
+
+    call "C:\Users\Kohsuke\AppData\Local\Temp\b2_msvc_14.0_vcvarsall_x86.cmd" >nul
+cl /Zm800 -nologo @"bin.v2\libs\python\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\str.obj.rsp" 
+
+...failed compile-c-c++ bin.v2\libs\python\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\str.obj...
+compile-c-c++ bin.v2\libs\python\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\slice.obj
+slice.cpp
+.\boost/python/detail/wrap_python.hpp(50): fatal error C1083: include ファイルを開けません。'pyconfig.h':No such file or directory
+
+    call "C:\Users\Kohsuke\AppData\Local\Temp\b2_msvc_14.0_vcvarsall_x86.cmd" >nul
+cl /Zm800 -nologo @"bin.v2\libs\python\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\slice.obj.rsp" 
+
+...failed compile-c-c++ bin.v2\libs\python\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\slice.obj...
+compile-c-c++ bin.v2\libs\python\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\converter\from_python.obj
+from_python.cpp
+.\boost/python/detail/wrap_python.hpp(50): fatal error C1083: include ファイルを開けません。'pyconfig.h':No such file or directory
+
+    call "C:\Users\Kohsuke\AppData\Local\Temp\b2_msvc_14.0_vcvarsall_x86.cmd" >nul
+cl /Zm800 -nologo @"bin.v2\libs\python\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\converter\from_python.obj.rsp" 
+
+...failed compile-c-c++ bin.v2\libs\python\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\converter\from_python.obj...
+common.mkdir bin.v2\libs\python\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\object
+compile-c-c++ bin.v2\libs\python\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\converter\registry.obj
+registry.cpp
+.\boost/python/detail/wrap_python.hpp(50): fatal error C1083: include ファイルを開けません。'pyconfig.h':No such file or directory
+
+    call "C:\Users\Kohsuke\AppData\Local\Temp\b2_msvc_14.0_vcvarsall_x86.cmd" >nul
+cl /Zm800 -nologo @"bin.v2\libs\python\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\converter\registry.obj.rsp" 
+
+...failed compile-c-c++ bin.v2\libs\python\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\converter\registry.obj...
+compile-c-c++ bin.v2\libs\python\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\converter\type_id.obj
+type_id.cpp
+.\boost/python/detail/wrap_python.hpp(50): fatal error C1083: include ファイルを開けません。'pyconfig.h':No such file or directory
+
+    call "C:\Users\Kohsuke\AppData\Local\Temp\b2_msvc_14.0_vcvarsall_x86.cmd" >nul
+cl /Zm800 -nologo @"bin.v2\libs\python\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\converter\type_id.obj.rsp" 
+
+...failed compile-c-c++ bin.v2\libs\python\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\converter\type_id.obj...
+compile-c-c++ bin.v2\libs\python\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\object\enum.obj
+enum.cpp
+.\boost/python/detail/wrap_python.hpp(50): fatal error C1083: include ファイルを開けません。'pyconfig.h':No such file or directory
+
+    call "C:\Users\Kohsuke\AppData\Local\Temp\b2_msvc_14.0_vcvarsall_x86.cmd" >nul
+cl /Zm800 -nologo @"bin.v2\libs\python\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\object\enum.obj.rsp" 
+
+...failed compile-c-c++ bin.v2\libs\python\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\object\enum.obj...
+compile-c-c++ bin.v2\libs\wave\build\msvc-14.0\debug\link-static\runtime-link-static\threading-multi\cpplexer\re2clex\cpp_re.obj
+cpp_re.cpp
+compile-c-c++ bin.v2\libs\python\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\object\class.obj
+class.cpp
+.\boost/python/detail/wrap_python.hpp(50): fatal error C1083: include ファイルを開けません。'pyconfig.h':No such file or directory
+
+    call "C:\Users\Kohsuke\AppData\Local\Temp\b2_msvc_14.0_vcvarsall_x86.cmd" >nul
+cl /Zm800 -nologo @"bin.v2\libs\python\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\object\class.obj.rsp" 
+
+...failed compile-c-c++ bin.v2\libs\python\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\object\class.obj...
+compile-c-c++ bin.v2\libs\python\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\object\function.obj
+function.cpp
+.\boost/python/detail/wrap_python.hpp(50): fatal error C1083: include ファイルを開けません。'pyconfig.h':No such file or directory
+
+    call "C:\Users\Kohsuke\AppData\Local\Temp\b2_msvc_14.0_vcvarsall_x86.cmd" >nul
+cl /Zm800 -nologo @"bin.v2\libs\python\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\object\function.obj.rsp" 
+
+...failed compile-c-c++ bin.v2\libs\python\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\object\function.obj...
+compile-c-c++ bin.v2\libs\python\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\object\inheritance.obj
+inheritance.cpp
+.\boost/python/detail/wrap_python.hpp(50): fatal error C1083: include ファイルを開けません。'pyconfig.h':No such file or directory
+
+    call "C:\Users\Kohsuke\AppData\Local\Temp\b2_msvc_14.0_vcvarsall_x86.cmd" >nul
+cl /Zm800 -nologo @"bin.v2\libs\python\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\object\inheritance.obj.rsp" 
+
+...failed compile-c-c++ bin.v2\libs\python\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\object\inheritance.obj...
+compile-c-c++ bin.v2\libs\python\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\object\life_support.obj
+life_support.cpp
+.\boost/python/detail/wrap_python.hpp(50): fatal error C1083: include ファイルを開けません。'pyconfig.h':No such file or directory
+
+    call "C:\Users\Kohsuke\AppData\Local\Temp\b2_msvc_14.0_vcvarsall_x86.cmd" >nul
+cl /Zm800 -nologo @"bin.v2\libs\python\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\object\life_support.obj.rsp" 
+
+...failed compile-c-c++ bin.v2\libs\python\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\object\life_support.obj...
+compile-c-c++ bin.v2\libs\python\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\object\pickle_support.obj
+pickle_support.cpp
+.\boost/python/detail/wrap_python.hpp(50): fatal error C1083: include ファイルを開けません。'pyconfig.h':No such file or directory
+
+    call "C:\Users\Kohsuke\AppData\Local\Temp\b2_msvc_14.0_vcvarsall_x86.cmd" >nul
+cl /Zm800 -nologo @"bin.v2\libs\python\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\object\pickle_support.obj.rsp" 
+
+...failed compile-c-c++ bin.v2\libs\python\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\object\pickle_support.obj...
+compile-c-c++ bin.v2\libs\python\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\errors.obj
+errors.cpp
+.\boost/python/detail/wrap_python.hpp(50): fatal error C1083: include ファイルを開けません。'pyconfig.h':No such file or directory
+
+    call "C:\Users\Kohsuke\AppData\Local\Temp\b2_msvc_14.0_vcvarsall_x86.cmd" >nul
+cl /Zm800 -nologo @"bin.v2\libs\python\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\errors.obj.rsp" 
+
+...failed compile-c-c++ bin.v2\libs\python\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\errors.obj...
+compile-c-c++ bin.v2\libs\python\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\module.obj
+module.cpp
+.\boost/python/detail/wrap_python.hpp(50): fatal error C1083: include ファイルを開けません。'pyconfig.h':No such file or directory
+
+    call "C:\Users\Kohsuke\AppData\Local\Temp\b2_msvc_14.0_vcvarsall_x86.cmd" >nul
+cl /Zm800 -nologo @"bin.v2\libs\python\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\module.obj.rsp" 
+
+...failed compile-c-c++ bin.v2\libs\python\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\module.obj...
+msvc.archive bin.v2\libs\wave\build\msvc-14.0\debug\link-static\runtime-link-static\threading-multi\libboost_wave-vc140-mt-sgd-1_61.lib
+compile-c-c++ bin.v2\libs\python\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\converter\arg_to_python_base.obj
+arg_to_python_base.cpp
+.\boost/python/detail/wrap_python.hpp(50): fatal error C1083: include ファイルを開けません。'pyconfig.h':No such file or directory
+
+    call "C:\Users\Kohsuke\AppData\Local\Temp\b2_msvc_14.0_vcvarsall_x86.cmd" >nul
+cl /Zm800 -nologo @"bin.v2\libs\python\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\converter\arg_to_python_base.obj.rsp" 
+
+...failed compile-c-c++ bin.v2\libs\python\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\converter\arg_to_python_base.obj...
+compile-c-c++ bin.v2\libs\python\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\converter\builtin_converters.obj
+builtin_converters.cpp
+.\boost/python/detail/wrap_python.hpp(50): fatal error C1083: include ファイルを開けません。'pyconfig.h':No such file or directory
+
+    call "C:\Users\Kohsuke\AppData\Local\Temp\b2_msvc_14.0_vcvarsall_x86.cmd" >nul
+cl /Zm800 -nologo @"bin.v2\libs\python\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\converter\builtin_converters.obj.rsp" 
+
+...failed compile-c-c++ bin.v2\libs\python\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\converter\builtin_converters.obj...
+compile-c-c++ bin.v2\libs\python\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\object\iterator.obj
+iterator.cpp
+.\boost/python/detail/wrap_python.hpp(50): fatal error C1083: include ファイルを開けません。'pyconfig.h':No such file or directory
+
+    call "C:\Users\Kohsuke\AppData\Local\Temp\b2_msvc_14.0_vcvarsall_x86.cmd" >nul
+cl /Zm800 -nologo @"bin.v2\libs\python\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\object\iterator.obj.rsp" 
+
+...failed compile-c-c++ bin.v2\libs\python\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\object\iterator.obj...
+common.copy stage\x86\lib\libboost_wave-vc140-mt-sgd-1_61.lib
+bin.v2\libs\wave\build\msvc-14.0\debug\link-static\runtime-link-static\threading-multi\libboost_wave-vc140-mt-sgd-1_61.lib
+        1 個のファイルをコピーしました。
+compile-c-c++ bin.v2\libs\python\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\object\stl_iterator.obj
+stl_iterator.cpp
+.\boost/python/detail/wrap_python.hpp(50): fatal error C1083: include ファイルを開けません。'pyconfig.h':No such file or directory
+
+    call "C:\Users\Kohsuke\AppData\Local\Temp\b2_msvc_14.0_vcvarsall_x86.cmd" >nul
+cl /Zm800 -nologo @"bin.v2\libs\python\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\object\stl_iterator.obj.rsp" 
+
+...failed compile-c-c++ bin.v2\libs\python\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\object\stl_iterator.obj...
+compile-c-c++ bin.v2\libs\python\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\object_protocol.obj
+object_protocol.cpp
+.\boost/python/detail/wrap_python.hpp(50): fatal error C1083: include ファイルを開けません。'pyconfig.h':No such file or directory
+
+    call "C:\Users\Kohsuke\AppData\Local\Temp\b2_msvc_14.0_vcvarsall_x86.cmd" >nul
+cl /Zm800 -nologo @"bin.v2\libs\python\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\object_protocol.obj.rsp" 
+
+...failed compile-c-c++ bin.v2\libs\python\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\object_protocol.obj...
+compile-c-c++ bin.v2\libs\python\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\object_operators.obj
+object_operators.cpp
+.\boost/python/detail/wrap_python.hpp(50): fatal error C1083: include ファイルを開けません。'pyconfig.h':No such file or directory
+
+    call "C:\Users\Kohsuke\AppData\Local\Temp\b2_msvc_14.0_vcvarsall_x86.cmd" >nul
+cl /Zm800 -nologo @"bin.v2\libs\python\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\object_operators.obj.rsp" 
+
+...failed compile-c-c++ bin.v2\libs\python\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\object_operators.obj...
+compile-c-c++ bin.v2\libs\python\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\wrapper.obj
+wrapper.cpp
+.\boost/python/detail/wrap_python.hpp(50): fatal error C1083: include ファイルを開けません。'pyconfig.h':No such file or directory
+
+    call "C:\Users\Kohsuke\AppData\Local\Temp\b2_msvc_14.0_vcvarsall_x86.cmd" >nul
+cl /Zm800 -nologo @"bin.v2\libs\python\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\wrapper.obj.rsp" 
+
+...failed compile-c-c++ bin.v2\libs\python\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\wrapper.obj...
+...on 100th target...
+compile-c-c++ bin.v2\libs\python\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\import.obj
+import.cpp
+.\boost/python/detail/wrap_python.hpp(50): fatal error C1083: include ファイルを開けません。'pyconfig.h':No such file or directory
+
+    call "C:\Users\Kohsuke\AppData\Local\Temp\b2_msvc_14.0_vcvarsall_x86.cmd" >nul
+cl /Zm800 -nologo @"bin.v2\libs\python\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\import.obj.rsp" 
+
+...failed compile-c-c++ bin.v2\libs\python\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\import.obj...
+compile-c-c++ bin.v2\libs\python\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\exec.obj
+exec.cpp
+.\boost/python/detail/wrap_python.hpp(50): fatal error C1083: include ファイルを開けません。'pyconfig.h':No such file or directory
+
+    call "C:\Users\Kohsuke\AppData\Local\Temp\b2_msvc_14.0_vcvarsall_x86.cmd" >nul
+cl /Zm800 -nologo @"bin.v2\libs\python\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\exec.obj.rsp" 
+
+...failed compile-c-c++ bin.v2\libs\python\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\exec.obj...
+common.mkdir bin.v2\libs\random\build\msvc-14.0\release
+common.mkdir bin.v2\libs\serialization\build\msvc-14.0\release
+common.mkdir bin.v2\libs\signals\build\msvc-14.0\release
+compile-c-c++ bin.v2\libs\python\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\object\function_doc_signature.obj
+function_doc_signature.cpp
+.\boost/python/detail/wrap_python.hpp(50): fatal error C1083: include ファイルを開けません。'pyconfig.h':No such file or directory
+
+    call "C:\Users\Kohsuke\AppData\Local\Temp\b2_msvc_14.0_vcvarsall_x86.cmd" >nul
+cl /Zm800 -nologo @"bin.v2\libs\python\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\object\function_doc_signature.obj.rsp" 
+
+...failed compile-c-c++ bin.v2\libs\python\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\object\function_doc_signature.obj...
+...skipped <pbin.v2\libs\python\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi>libboost_python-vc140-mt-s-1_61.lib for lack of <pbin.v2\libs\python\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi>numeric.obj...
+...skipped <pstage\x86\lib>libboost_python-vc140-mt-s-1_61.lib for lack of <pbin.v2\libs\python\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi>libboost_python-vc140-mt-s-1_61.lib...
+common.mkdir bin.v2\libs\random\build\msvc-14.0\release\link-static
+common.mkdir bin.v2\libs\serialization\build\msvc-14.0\release\link-static
+common.mkdir bin.v2\libs\signals\build\msvc-14.0\release\link-static
+common.mkdir bin.v2\libs\test\build\msvc-14.0\release
+common.mkdir bin.v2\libs\serialization\build\msvc-14.0\release\link-static\runtime-link-static
+common.mkdir bin.v2\libs\random\build\msvc-14.0\release\link-static\runtime-link-static
+common.mkdir bin.v2\libs\signals\build\msvc-14.0\release\link-static\runtime-link-static
+common.mkdir bin.v2\libs\serialization\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi
+common.mkdir bin.v2\libs\random\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi
+common.mkdir bin.v2\libs\signals\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi
+common.mkdir bin.v2\libs\test\build\msvc-14.0\release\link-static
+compile-c-c++ bin.v2\libs\serialization\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\basic_archive.obj
+basic_archive.cpp
+compile-c-c++ bin.v2\libs\signals\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\connection.obj
+connection.cpp
+compile-c-c++ bin.v2\libs\signals\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\trackable.obj
+trackable.cpp
+compile-c-c++ bin.v2\libs\random\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\random_device.obj
+random_device.cpp
+msvc.archive bin.v2\libs\random\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\libboost_random-vc140-mt-s-1_61.lib
+common.copy stage\x86\lib\libboost_random-vc140-mt-s-1_61.lib
+bin.v2\libs\random\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\libboost_random-vc140-mt-s-1_61.lib
+        1 個のファイルをコピーしました。
+compile-c-c++ bin.v2\libs\signals\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\named_slot_map.obj
+named_slot_map.cpp
+compile-c-c++ bin.v2\libs\serialization\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\basic_iserializer.obj
+basic_iserializer.cpp
+compile-c-c++ bin.v2\libs\signals\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\slot.obj
+slot.cpp
+compile-c-c++ bin.v2\libs\signals\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\signal_base.obj
+signal_base.cpp
+compile-c-c++ bin.v2\libs\serialization\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\basic_iarchive.obj
+basic_iarchive.cpp
+msvc.archive bin.v2\libs\signals\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\libboost_signals-vc140-mt-s-1_61.lib
+common.copy stage\x86\lib\libboost_signals-vc140-mt-s-1_61.lib
+bin.v2\libs\signals\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\libboost_signals-vc140-mt-s-1_61.lib
+        1 個のファイルをコピーしました。
+compile-c-c++ bin.v2\libs\serialization\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\basic_pointer_iserializer.obj
+basic_pointer_iserializer.cpp
+compile-c-c++ bin.v2\libs\serialization\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\basic_oserializer.obj
+basic_oserializer.cpp
+compile-c-c++ bin.v2\libs\serialization\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\basic_pointer_oserializer.obj
+basic_pointer_oserializer.cpp
+compile-c-c++ bin.v2\libs\serialization\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\basic_oarchive.obj
+basic_oarchive.cpp
+compile-c-c++ bin.v2\libs\serialization\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\basic_serializer_map.obj
+basic_serializer_map.cpp
+compile-c-c++ bin.v2\libs\serialization\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\basic_xml_archive.obj
+basic_xml_archive.cpp
+compile-c-c++ bin.v2\libs\serialization\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\basic_text_oprimitive.obj
+basic_text_oprimitive.cpp
+compile-c-c++ bin.v2\libs\serialization\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\basic_text_iprimitive.obj
+basic_text_iprimitive.cpp
+compile-c-c++ bin.v2\libs\serialization\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\extended_type_info.obj
+extended_type_info.cpp
+compile-c-c++ bin.v2\libs\serialization\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\binary_iarchive.obj
+binary_iarchive.cpp
+compile-c-c++ bin.v2\libs\serialization\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\extended_type_info_typeid.obj
+extended_type_info_typeid.cpp
+compile-c-c++ bin.v2\libs\serialization\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\extended_type_info_no_rtti.obj
+extended_type_info_no_rtti.cpp
+compile-c-c++ bin.v2\libs\serialization\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\stl_port.obj
+stl_port.cpp
+compile-c-c++ bin.v2\libs\serialization\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\binary_oarchive.obj
+binary_oarchive.cpp
+compile-c-c++ bin.v2\libs\serialization\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\polymorphic_iarchive.obj
+polymorphic_iarchive.cpp
+compile-c-c++ bin.v2\libs\serialization\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\polymorphic_oarchive.obj
+polymorphic_oarchive.cpp
+compile-c-c++ bin.v2\libs\serialization\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\void_cast.obj
+void_cast.cpp
+compile-c-c++ bin.v2\libs\serialization\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\text_oarchive.obj
+text_oarchive.cpp
+compile-c-c++ bin.v2\libs\serialization\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\archive_exception.obj
+archive_exception.cpp
+compile-c-c++ bin.v2\libs\serialization\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\text_iarchive.obj
+text_iarchive.cpp
+compile-c-c++ bin.v2\libs\serialization\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\xml_archive_exception.obj
+xml_archive_exception.cpp
+compile-c-c++ bin.v2\libs\serialization\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\codecvt_null.obj
+codecvt_null.cpp
+compile-c-c++ bin.v2\libs\serialization\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\xml_oarchive.obj
+xml_oarchive.cpp
+compile-c-c++ bin.v2\libs\serialization\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\singleton.obj
+singleton.cpp
+compile-c-c++ bin.v2\libs\serialization\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\utf8_codecvt_facet.obj
+utf8_codecvt_facet.cpp
+compile-c-c++ bin.v2\libs\serialization\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\xml_iarchive.obj
+xml_iarchive.cpp
+compile-c-c++ bin.v2\libs\serialization\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\basic_text_woprimitive.obj
+basic_text_woprimitive.cpp
+compile-c-c++ bin.v2\libs\serialization\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\basic_text_wiprimitive.obj
+basic_text_wiprimitive.cpp
+compile-c-c++ bin.v2\libs\serialization\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\xml_grammar.obj
+xml_grammar.cpp
+msvc.archive bin.v2\libs\serialization\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\libboost_serialization-vc140-mt-s-1_61.lib
+common.copy stage\x86\lib\libboost_serialization-vc140-mt-s-1_61.lib
+bin.v2\libs\serialization\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\libboost_serialization-vc140-mt-s-1_61.lib
+        1 個のファイルをコピーしました。
+compile-c-c++ bin.v2\libs\serialization\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\text_wiarchive.obj
+text_wiarchive.cpp
+compile-c-c++ bin.v2\libs\serialization\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\text_woarchive.obj
+text_woarchive.cpp
+common.mkdir bin.v2\libs\test\build\msvc-14.0\release\link-static\runtime-link-static
+common.mkdir bin.v2\libs\test\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi
+compile-c-c++ bin.v2\libs\serialization\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\xml_woarchive.obj
+xml_woarchive.cpp
+compile-c-c++ bin.v2\libs\serialization\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\xml_wiarchive.obj
+xml_wiarchive.cpp
+compile-c-c++ bin.v2\libs\test\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\execution_monitor.obj
+execution_monitor.cpp
+t:\downloads\boost_1_61_0\boost\test\impl\execution_monitor.ipp(1296) : warning C4702: 制御が渡らないコードです。
+compile-c-c++ bin.v2\libs\test\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\debug.obj
+debug.cpp
+compile-c-c++ bin.v2\libs\serialization\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\xml_wgrammar.obj
+xml_wgrammar.cpp
+msvc.archive bin.v2\libs\serialization\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\libboost_wserialization-vc140-mt-s-1_61.lib
+common.copy stage\x86\lib\libboost_wserialization-vc140-mt-s-1_61.lib
+bin.v2\libs\serialization\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\libboost_wserialization-vc140-mt-s-1_61.lib
+        1 個のファイルをコピーしました。
+compile-c-c++ bin.v2\libs\test\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\cpp_main.obj
+cpp_main.cpp
+msvc.archive bin.v2\libs\test\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\libboost_prg_exec_monitor-vc140-mt-s-1_61.lib
+common.copy stage\x86\lib\libboost_prg_exec_monitor-vc140-mt-s-1_61.lib
+bin.v2\libs\test\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\libboost_prg_exec_monitor-vc140-mt-s-1_61.lib
+        1 個のファイルをコピーしました。
+compile-c-c++ bin.v2\libs\test\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\compiler_log_formatter.obj
+compiler_log_formatter.cpp
+compile-c-c++ bin.v2\libs\test\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\decorator.obj
+decorator.cpp
+compile-c-c++ bin.v2\libs\test\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\progress_monitor.obj
+progress_monitor.cpp
+compile-c-c++ bin.v2\libs\test\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\results_collector.obj
+results_collector.cpp
+compile-c-c++ bin.v2\libs\test\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\plain_report_formatter.obj
+plain_report_formatter.cpp
+compile-c-c++ bin.v2\libs\test\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\framework.obj
+framework.cpp
+compile-c-c++ bin.v2\libs\test\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\results_reporter.obj
+results_reporter.cpp
+compile-c-c++ bin.v2\libs\test\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\test_main.obj
+test_main.cpp
+compile-c-c++ bin.v2\libs\test\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\test_tools.obj
+test_tools.cpp
+compile-c-c++ bin.v2\libs\test\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\unit_test_log.obj
+unit_test_log.cpp
+compile-c-c++ bin.v2\libs\test\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\test_tree.obj
+test_tree.cpp
+compile-c-c++ bin.v2\libs\test\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\unit_test_main.obj
+unit_test_main.cpp
+compile-c-c++ bin.v2\libs\test\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\unit_test_monitor.obj
+unit_test_monitor.cpp
+common.mkdir bin.v2\libs\type_erasure\build\msvc-14.0\release
+common.mkdir bin.v2\libs\type_erasure\build\msvc-14.0\release\link-static
+common.mkdir bin.v2\libs\type_erasure\build\msvc-14.0\release\link-static\runtime-link-static
+compile-c-c++ bin.v2\libs\test\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\xml_log_formatter.obj
+xml_log_formatter.cpp
+common.mkdir bin.v2\libs\type_erasure\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi
+common.mkdir bin.v2\libs\wave\build\msvc-14.0\release
+common.mkdir bin.v2\libs\wave\build\msvc-14.0\release\link-static
+common.mkdir bin.v2\libs\wave\build\msvc-14.0\release\link-static\runtime-link-static
+common.mkdir bin.v2\libs\wave\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi
+compile-c-c++ bin.v2\libs\test\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\xml_report_formatter.obj
+xml_report_formatter.cpp
+compile-c-c++ bin.v2\libs\type_erasure\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\dynamic_binding.obj
+dynamic_binding.cpp
+msvc.archive bin.v2\libs\type_erasure\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\libboost_type_erasure-vc140-mt-s-1_61.lib
+...on 200th target...
+common.copy stage\x86\lib\libboost_type_erasure-vc140-mt-s-1_61.lib
+bin.v2\libs\type_erasure\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\libboost_type_erasure-vc140-mt-s-1_61.lib
+        1 個のファイルをコピーしました。
+compile-c-c++ bin.v2\libs\test\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\unit_test_parameters.obj
+unit_test_parameters.cpp
+msvc.archive bin.v2\libs\test\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\libboost_test_exec_monitor-vc140-mt-s-1_61.lib
+common.copy stage\x86\lib\libboost_test_exec_monitor-vc140-mt-s-1_61.lib
+bin.v2\libs\test\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\libboost_test_exec_monitor-vc140-mt-s-1_61.lib
+        1 個のファイルをコピーしました。
+compile-c-c++ bin.v2\libs\wave\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\instantiate_cpp_exprgrammar.obj
+instantiate_cpp_exprgrammar.cpp
+compile-c-c++ bin.v2\libs\wave\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\instantiate_cpp_grammar.obj
+instantiate_cpp_grammar.cpp
+compile-c-c++ bin.v2\libs\wave\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\instantiate_cpp_literalgrs.obj
+instantiate_cpp_literalgrs.cpp
+compile-c-c++ bin.v2\libs\wave\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\instantiate_defined_grammar.obj
+instantiate_defined_grammar.cpp
+compile-c-c++ bin.v2\libs\wave\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\instantiate_predef_macros.obj
+instantiate_predef_macros.cpp
+compile-c-c++ bin.v2\libs\wave\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\token_ids.obj
+token_ids.cpp
+compile-c-c++ bin.v2\libs\wave\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\instantiate_re2c_lexer.obj
+instantiate_re2c_lexer.cpp
+common.mkdir bin.v2\libs\wave\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\cpplexer
+common.mkdir bin.v2\libs\atomic\build\msvc-14.0\release
+common.mkdir bin.v2\libs\wave\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\cpplexer\re2clex
+common.mkdir bin.v2\libs\atomic\build\msvc-14.0\release\link-static
+compile-c-c++ bin.v2\libs\wave\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\wave_config_constant.obj
+wave_config_constant.cpp
+common.mkdir bin.v2\libs\atomic\build\msvc-14.0\release\link-static\runtime-link-static
+compile-c-c++ bin.v2\libs\wave\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\instantiate_re2c_lexer_str.obj
+instantiate_re2c_lexer_str.cpp
+common.mkdir bin.v2\libs\atomic\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi
+common.mkdir bin.v2\libs\system\build\msvc-14.0\release
+common.mkdir bin.v2\libs\system\build\msvc-14.0\release\link-static
+common.mkdir bin.v2\libs\system\build\msvc-14.0\release\link-static\runtime-link-static
+common.mkdir bin.v2\libs\system\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi
+compile-c-c++ bin.v2\libs\atomic\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\lockpool.obj
+lockpool.cpp
+msvc.archive bin.v2\libs\atomic\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\libboost_atomic-vc140-mt-s-1_61.lib
+common.copy stage\x86\lib\libboost_atomic-vc140-mt-s-1_61.lib
+bin.v2\libs\atomic\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\libboost_atomic-vc140-mt-s-1_61.lib
+        1 個のファイルをコピーしました。
+common.mkdir bin.v2\libs\chrono\build\msvc-14.0\release
+common.mkdir bin.v2\libs\chrono\build\msvc-14.0\release\link-static
+common.mkdir bin.v2\libs\chrono\build\msvc-14.0\release\link-static\runtime-link-static
+common.mkdir bin.v2\libs\chrono\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi
+compile-c-c++ bin.v2\libs\wave\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\cpplexer\re2clex\aq.obj
+aq.cpp
+compile-c-c++ bin.v2\libs\system\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\error_code.obj
+error_code.cpp
+msvc.archive bin.v2\libs\system\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\libboost_system-vc140-mt-s-1_61.lib
+common.copy stage\x86\lib\libboost_system-vc140-mt-s-1_61.lib
+bin.v2\libs\system\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\libboost_system-vc140-mt-s-1_61.lib
+        1 個のファイルをコピーしました。
+compile-c-c++ bin.v2\libs\chrono\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\chrono.obj
+chrono.cpp
+This header is deprecated, use boost/detail/winapi/get_last_error.hpp instead.
+common.mkdir bin.v2\libs\container\build\msvc-14.0\release
+common.mkdir bin.v2\libs\container\build\msvc-14.0\release\link-static
+common.mkdir bin.v2\libs\container\build\msvc-14.0\release\link-static\runtime-link-static
+common.mkdir bin.v2\libs\container\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi
+compile-c-c++ bin.v2\libs\chrono\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\thread_clock.obj
+thread_clock.cpp
+This header is deprecated, use boost/detail/winapi/get_last_error.hpp instead.
+This header is deprecated, use boost/detail/winapi/get_current_thread.hpp instead.
+This header is deprecated, use boost/detail/winapi/get_thread_times.hpp instead.
+compile-c-c++ bin.v2\libs\container\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\dlmalloc.obj
+dlmalloc.cpp
+compile-c-c++ bin.v2\libs\container\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\alloc_lib.obj
+alloc_lib.c
+compile-c-c++ bin.v2\libs\chrono\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\process_cpu_clocks.obj
+process_cpu_clocks.cpp
+This header is deprecated, use boost/detail/winapi/get_last_error.hpp instead.
+This header is deprecated, use boost/detail/winapi/get_current_process.hpp instead.
+This header is deprecated, use boost/detail/winapi/get_process_times.hpp instead.
+msvc.archive bin.v2\libs\chrono\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\libboost_chrono-vc140-mt-s-1_61.lib
+common.copy stage\x86\lib\libboost_chrono-vc140-mt-s-1_61.lib
+bin.v2\libs\chrono\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\libboost_chrono-vc140-mt-s-1_61.lib
+        1 個のファイルをコピーしました。
+compile-c-c++ bin.v2\libs\container\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\global_resource.obj
+global_resource.cpp
+compile-c-c++ bin.v2\libs\container\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\monotonic_buffer_resource.obj
+monotonic_buffer_resource.cpp
+compile-c-c++ bin.v2\libs\container\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\pool_resource.obj
+pool_resource.cpp
+common.mkdir bin.v2\libs\context\build\msvc-14.0\release
+compile-c-c++ bin.v2\libs\container\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\synchronized_pool_resource.obj
+synchronized_pool_resource.cpp
+common.mkdir bin.v2\libs\context\build\msvc-14.0\release\link-static
+common.mkdir bin.v2\libs\thread\build\msvc-14.0\release
+common.mkdir bin.v2\libs\context\build\msvc-14.0\release\link-static\runtime-link-static
+common.mkdir bin.v2\libs\thread\build\msvc-14.0\release\link-static
+common.mkdir bin.v2\libs\context\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi
+compile-c-c++ bin.v2\libs\container\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\unsynchronized_pool_resource.obj
+unsynchronized_pool_resource.cpp
+common.mkdir bin.v2\libs\thread\build\msvc-14.0\release\link-static\runtime-link-static
+common.mkdir bin.v2\libs\context\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\asm
+msvc.archive bin.v2\libs\container\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\libboost_container-vc140-mt-s-1_61.lib
+msvc.compile.asm bin.v2\libs\context\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\asm\make_i386_ms_pe_masm.obj
+ Assembling: libs\context\src\asm\make_i386_ms_pe_masm.asm
+common.copy stage\x86\lib\libboost_container-vc140-mt-s-1_61.lib
+bin.v2\libs\container\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\libboost_container-vc140-mt-s-1_61.lib
+        1 個のファイルをコピーしました。
+msvc.compile.asm bin.v2\libs\context\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\asm\jump_i386_ms_pe_masm.obj
+ Assembling: libs\context\src\asm\jump_i386_ms_pe_masm.asm
+compile-c-c++ bin.v2\libs\context\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\dummy.obj
+dummy.cpp
+common.mkdir bin.v2\libs\context\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\windows
+msvc.compile.asm bin.v2\libs\context\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\asm\ontop_i386_ms_pe_masm.obj
+ Assembling: libs\context\src\asm\ontop_i386_ms_pe_masm.asm
+common.mkdir bin.v2\libs\thread\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi
+common.mkdir bin.v2\libs\thread\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\win32
+compile-c-c++ bin.v2\libs\context\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\execution_context.obj
+execution_context.cpp
+compile-c-c++ bin.v2\libs\thread\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\win32\tss_dll.obj
+tss_dll.cpp
+compile-c-c++ bin.v2\libs\context\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\windows\stack_traits.obj
+stack_traits.cpp
+msvc.archive bin.v2\libs\context\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\libboost_context-vc140-mt-s-1_61.lib
+common.copy stage\x86\lib\libboost_context-vc140-mt-s-1_61.lib
+bin.v2\libs\context\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\libboost_context-vc140-mt-s-1_61.lib
+        1 個のファイルをコピーしました。
+compile-c-c++ bin.v2\libs\thread\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\win32\tss_pe.obj
+tss_pe.cpp
+common.mkdir bin.v2\libs\coroutine\build\msvc-14.0\release
+common.mkdir bin.v2\libs\coroutine\build\msvc-14.0\release\link-static
+common.mkdir bin.v2\libs\coroutine\build\msvc-14.0\release\link-static\runtime-link-static
+common.mkdir bin.v2\libs\coroutine\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi
+common.mkdir bin.v2\libs\coroutine\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\detail
+compile-c-c++ bin.v2\libs\coroutine\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\detail\coroutine_context.obj
+coroutine_context.cpp
+compile-c-c++ bin.v2\libs\thread\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\future.obj
+future.cpp
+common.mkdir bin.v2\libs\coroutine\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\windows
+compile-c-c++ bin.v2\libs\coroutine\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\exceptions.obj
+exceptions.cpp
+common.mkdir bin.v2\libs\date_time\build\msvc-14.0\release
+common.mkdir bin.v2\libs\date_time\build\msvc-14.0\release\link-static
+common.mkdir bin.v2\libs\date_time\build\msvc-14.0\release\link-static\runtime-link-static
+common.mkdir bin.v2\libs\date_time\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi
+common.mkdir bin.v2\libs\date_time\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\gregorian
+compile-c-c++ bin.v2\libs\thread\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\win32\thread.obj
+thread.cpp
+msvc.archive bin.v2\libs\thread\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\libboost_thread-vc140-mt-s-1_61.lib
+common.copy stage\x86\lib\libboost_thread-vc140-mt-s-1_61.lib
+bin.v2\libs\thread\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\libboost_thread-vc140-mt-s-1_61.lib
+        1 個のファイルをコピーしました。
+compile-c-c++ bin.v2\libs\date_time\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\gregorian\greg_weekday.obj
+greg_weekday.cpp
+compile-c-c++ bin.v2\libs\date_time\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\gregorian\date_generators.obj
+date_generators.cpp
+common.mkdir bin.v2\libs\exception\build\msvc-14.0\release
+common.mkdir bin.v2\libs\exception\build\msvc-14.0\release\link-static
+common.mkdir bin.v2\libs\exception\build\msvc-14.0\release\link-static\runtime-link-static
+common.mkdir bin.v2\libs\exception\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi
+compile-c-c++ bin.v2\libs\coroutine\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\windows\stack_traits.obj
+stack_traits.cpp
+compile-c-c++ bin.v2\libs\date_time\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\gregorian\greg_month.obj
+greg_month.cpp
+msvc.archive bin.v2\libs\coroutine\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\libboost_coroutine-vc140-mt-s-1_61.lib
+msvc.archive bin.v2\libs\date_time\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\libboost_date_time-vc140-mt-s-1_61.lib
+...on 300th target...
+common.copy stage\x86\lib\libboost_coroutine-vc140-mt-s-1_61.lib
+bin.v2\libs\coroutine\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\libboost_coroutine-vc140-mt-s-1_61.lib
+        1 個のファイルをコピーしました。
+common.copy stage\x86\lib\libboost_date_time-vc140-mt-s-1_61.lib
+bin.v2\libs\date_time\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\libboost_date_time-vc140-mt-s-1_61.lib
+        1 個のファイルをコピーしました。
+common.mkdir bin.v2\libs\filesystem\build\msvc-14.0\release
+common.mkdir bin.v2\libs\regex\build\msvc-14.0\release
+common.mkdir bin.v2\libs\filesystem\build\msvc-14.0\release\link-static
+common.mkdir bin.v2\libs\regex\build\msvc-14.0\release\link-static
+common.mkdir bin.v2\libs\filesystem\build\msvc-14.0\release\link-static\runtime-link-static
+common.mkdir bin.v2\libs\regex\build\msvc-14.0\release\link-static\runtime-link-static
+common.mkdir bin.v2\libs\filesystem\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi
+common.mkdir bin.v2\libs\regex\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi
+compile-c-c++ bin.v2\libs\exception\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\clone_current_exception_non_intrusive.obj
+clone_current_exception_non_intrusive.cpp
+msvc.archive bin.v2\libs\exception\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\libboost_exception-vc140-mt-s-1_61.lib
+common.copy stage\x86\lib\libboost_exception-vc140-mt-s-1_61.lib
+bin.v2\libs\exception\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\libboost_exception-vc140-mt-s-1_61.lib
+        1 個のファイルをコピーしました。
+compile-c-c++ bin.v2\libs\filesystem\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\codecvt_error_category.obj
+codecvt_error_category.cpp
+compile-c-c++ bin.v2\libs\filesystem\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\path_traits.obj
+path_traits.cpp
+compile-c-c++ bin.v2\libs\filesystem\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\path.obj
+path.cpp
+compile-c-c++ bin.v2\libs\filesystem\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\operations.obj
+operations.cpp
+compile-c-c++ bin.v2\libs\filesystem\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\portability.obj
+portability.cpp
+compile-c-c++ bin.v2\libs\filesystem\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\utf8_codecvt_facet.obj
+utf8_codecvt_facet.cpp
+compile-c-c++ bin.v2\libs\filesystem\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\windows_file_codecvt.obj
+windows_file_codecvt.cpp
+compile-c-c++ bin.v2\libs\regex\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\c_regex_traits.obj
+c_regex_traits.cpp
+compile-c-c++ bin.v2\libs\filesystem\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\unique_path.obj
+unique_path.cpp
+msvc.archive bin.v2\libs\filesystem\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\libboost_filesystem-vc140-mt-s-1_61.lib
+common.copy stage\x86\lib\libboost_filesystem-vc140-mt-s-1_61.lib
+bin.v2\libs\filesystem\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\libboost_filesystem-vc140-mt-s-1_61.lib
+        1 個のファイルをコピーしました。
+compile-c-c++ bin.v2\libs\regex\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\cpp_regex_traits.obj
+cpp_regex_traits.cpp
+compile-c-c++ bin.v2\libs\regex\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\icu.obj
+icu.cpp
+compile-c-c++ bin.v2\libs\regex\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\fileiter.obj
+fileiter.cpp
+compile-c-c++ bin.v2\libs\regex\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\cregex.obj
+cregex.cpp
+compile-c-c++ bin.v2\libs\regex\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\posix_api.obj
+posix_api.cpp
+compile-c-c++ bin.v2\libs\regex\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\regex_debug.obj
+regex_debug.cpp
+compile-c-c++ bin.v2\libs\regex\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\instances.obj
+instances.cpp
+compile-c-c++ bin.v2\libs\regex\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\regex_raw_buffer.obj
+regex_raw_buffer.cpp
+compile-c-c++ bin.v2\libs\regex\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\regex.obj
+regex.cpp
+compile-c-c++ bin.v2\libs\regex\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\regex_traits_defaults.obj
+regex_traits_defaults.cpp
+compile-c-c++ bin.v2\libs\regex\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\static_mutex.obj
+static_mutex.cpp
+compile-c-c++ bin.v2\libs\regex\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\wc_regex_traits.obj
+wc_regex_traits.cpp
+compile-c-c++ bin.v2\libs\regex\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\w32_regex_traits.obj
+w32_regex_traits.cpp
+compile-c-c++ bin.v2\libs\regex\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\wide_posix_api.obj
+wide_posix_api.cpp
+common.mkdir bin.v2\libs\graph\build\msvc-14.0\release
+common.mkdir bin.v2\libs\graph\build\msvc-14.0\release\link-static
+common.mkdir bin.v2\libs\graph\build\msvc-14.0\release\link-static\runtime-link-static
+common.mkdir bin.v2\libs\graph\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi
+compile-c-c++ bin.v2\libs\wave\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\cpplexer\re2clex\cpp_re.obj
+cpp_re.cpp
+compile-c-c++ bin.v2\libs\regex\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\winstances.obj
+winstances.cpp
+compile-c-c++ bin.v2\libs\regex\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\usinstances.obj
+usinstances.cpp
+msvc.archive bin.v2\libs\wave\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\libboost_wave-vc140-mt-s-1_61.lib
+msvc.archive bin.v2\libs\regex\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\libboost_regex-vc140-mt-s-1_61.lib
+common.copy stage\x86\lib\libboost_wave-vc140-mt-s-1_61.lib
+bin.v2\libs\wave\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\libboost_wave-vc140-mt-s-1_61.lib
+        1 個のファイルをコピーしました。
+common.copy stage\x86\lib\libboost_regex-vc140-mt-s-1_61.lib
+bin.v2\libs\regex\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\libboost_regex-vc140-mt-s-1_61.lib
+        1 個のファイルをコピーしました。
+common.mkdir bin.v2\libs\iostreams\build\msvc-14.0\release
+common.mkdir bin.v2\libs\locale\build\msvc-14.0\release
+common.mkdir bin.v2\libs\iostreams\build\msvc-14.0\release\link-static
+common.mkdir bin.v2\libs\locale\build\msvc-14.0\release\link-static
+common.mkdir bin.v2\libs\iostreams\build\msvc-14.0\release\link-static\runtime-link-static
+common.mkdir bin.v2\libs\locale\build\msvc-14.0\release\link-static\runtime-link-static
+common.mkdir bin.v2\libs\iostreams\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi
+common.mkdir bin.v2\libs\locale\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi
+compile-c-c++ bin.v2\libs\iostreams\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\file_descriptor.obj
+file_descriptor.cpp
+libs\iostreams\src\file_descriptor.cpp(241): warning C4800: 'int': ブール値を 'true' または 'false' に強制的に設定します (警告の処理)
+libs\iostreams\src\file_descriptor.cpp(265): warning C4244: '引数': 'std::streamsize' から 'DWORD' への変換です。データが失われる可能性があります。
+libs\iostreams\src\file_descriptor.cpp(289): warning C4244: '引数': 'std::streamsize' から 'DWORD' への変換です。データが失われる可能性があります。
+common.mkdir bin.v2\libs\locale\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\encoding
+compile-c-c++ bin.v2\libs\iostreams\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\mapped_file.obj
+mapped_file.cpp
+libs\iostreams\src\mapped_file.cpp(59): warning C4244: 'return': 'const boost::iostreams::stream_offset' から 'std::size_t' への変換です。データが失われる可能性があります。
+libs\iostreams\src\mapped_file.cpp(325): warning C4244: '引数': 'boost::iostreams::stream_offset' から 'SIZE_T' への変換です。データが失われる可能性があります。
+msvc.archive bin.v2\libs\iostreams\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\libboost_iostreams-vc140-mt-s-1_61.lib
+common.copy stage\x86\lib\libboost_iostreams-vc140-mt-s-1_61.lib
+bin.v2\libs\iostreams\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\libboost_iostreams-vc140-mt-s-1_61.lib
+        1 個のファイルをコピーしました。
+common.mkdir bin.v2\libs\locale\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\shared
+compile-c-c++ bin.v2\libs\locale\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\encoding\codepage.obj
+codepage.cpp
+compile-c-c++ bin.v2\libs\graph\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\read_graphviz_new.obj
+read_graphviz_new.cpp
+compile-c-c++ bin.v2\libs\locale\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\shared\date_time.obj
+date_time.cpp
+compile-c-c++ bin.v2\libs\locale\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\shared\format.obj
+format.cpp
+compile-c-c++ bin.v2\libs\locale\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\shared\formatting.obj
+formatting.cpp
+compile-c-c++ bin.v2\libs\locale\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\shared\ids.obj
+ids.cpp
+compile-c-c++ bin.v2\libs\locale\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\shared\generator.obj
+generator.cpp
+compile-c-c++ bin.v2\libs\graph\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\graphml.obj
+graphml.cpp
+msvc.archive bin.v2\libs\graph\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\libboost_graph-vc140-mt-s-1_61.lib
+common.copy stage\x86\lib\libboost_graph-vc140-mt-s-1_61.lib
+bin.v2\libs\graph\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\libboost_graph-vc140-mt-s-1_61.lib
+        1 個のファイルをコピーしました。
+common.mkdir bin.v2\libs\locale\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\util
+compile-c-c++ bin.v2\libs\locale\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\shared\mo_lambda.obj
+mo_lambda.cpp
+compile-c-c++ bin.v2\libs\locale\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\shared\localization_backend.obj
+localization_backend.cpp
+compile-c-c++ bin.v2\libs\locale\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\util\codecvt_converter.obj
+codecvt_converter.cpp
+compile-c-c++ bin.v2\libs\locale\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\util\info.obj
+info.cpp
+common.mkdir bin.v2\libs\locale\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\std
+compile-c-c++ bin.v2\libs\locale\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\util\locale_data.obj
+locale_data.cpp
+compile-c-c++ bin.v2\libs\locale\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\util\default_locale.obj
+default_locale.cpp
+compile-c-c++ bin.v2\libs\locale\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\std\codecvt.obj
+codecvt.cpp
+compile-c-c++ bin.v2\libs\locale\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\shared\message.obj
+message.cpp
+compile-c-c++ bin.v2\libs\locale\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\std\collate.obj
+collate.cpp
+compile-c-c++ bin.v2\libs\locale\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\std\converter.obj
+converter.cpp
+common.mkdir bin.v2\libs\locale\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\win32
+compile-c-c++ bin.v2\libs\locale\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\util\gregorian.obj
+gregorian.cpp
+compile-c-c++ bin.v2\libs\locale\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\win32\collate.obj
+collate.cpp
+compile-c-c++ bin.v2\libs\locale\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\std\numeric.obj
+numeric.cpp
+compile-c-c++ bin.v2\libs\locale\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\std\std_backend.obj
+std_backend.cpp
+compile-c-c++ bin.v2\libs\locale\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\win32\converter.obj
+converter.cpp
+common.mkdir bin.v2\libs\log\build\msvc-14.0\release
+common.mkdir bin.v2\libs\log\build\msvc-14.0\release\link-static
+common.mkdir bin.v2\libs\log\build\msvc-14.0\release\link-static\log-api-winnt
+common.mkdir bin.v2\libs\log\build\msvc-14.0\release\link-static\log-api-winnt\runtime-link-static
+common.mkdir bin.v2\libs\log\build\msvc-14.0\release\link-static\log-api-winnt\runtime-link-static\threading-multi
+compile-c-c++ bin.v2\libs\locale\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\win32\lcid.obj
+lcid.cpp
+compile-c-c++ bin.v2\libs\locale\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\win32\win_backend.obj
+win_backend.cpp
+compile-c-c++ bin.v2\libs\log\build\msvc-14.0\release\link-static\log-api-winnt\runtime-link-static\threading-multi\attribute_name.obj
+attribute_name.cpp
+compile-c-c++ bin.v2\libs\locale\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\win32\numeric.obj
+numeric.cpp
+...on 400th target...
+msvc.archive bin.v2\libs\locale\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\libboost_locale-vc140-mt-s-1_61.lib
+common.copy stage\x86\lib\libboost_locale-vc140-mt-s-1_61.lib
+bin.v2\libs\locale\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\libboost_locale-vc140-mt-s-1_61.lib
+        1 個のファイルをコピーしました。
+compile-c-c++ bin.v2\libs\log\build\msvc-14.0\release\link-static\log-api-winnt\runtime-link-static\threading-multi\attribute_set.obj
+attribute_set.cpp
+compile-c-c++ bin.v2\libs\log\build\msvc-14.0\release\link-static\log-api-winnt\runtime-link-static\threading-multi\code_conversion.obj
+code_conversion.cpp
+compile-c-c++ bin.v2\libs\log\build\msvc-14.0\release\link-static\log-api-winnt\runtime-link-static\threading-multi\attribute_value_set.obj
+attribute_value_set.cpp
+compile-c-c++ bin.v2\libs\log\build\msvc-14.0\release\link-static\log-api-winnt\runtime-link-static\threading-multi\severity_level.obj
+severity_level.cpp
+compile-c-c++ bin.v2\libs\log\build\msvc-14.0\release\link-static\log-api-winnt\runtime-link-static\threading-multi\global_logger_storage.obj
+global_logger_storage.cpp
+compile-c-c++ bin.v2\libs\log\build\msvc-14.0\release\link-static\log-api-winnt\runtime-link-static\threading-multi\named_scope.obj
+named_scope.cpp
+compile-c-c++ bin.v2\libs\log\build\msvc-14.0\release\link-static\log-api-winnt\runtime-link-static\threading-multi\process_name.obj
+process_name.cpp
+compile-c-c++ bin.v2\libs\log\build\msvc-14.0\release\link-static\log-api-winnt\runtime-link-static\threading-multi\record_ostream.obj
+record_ostream.cpp
+compile-c-c++ bin.v2\libs\log\build\msvc-14.0\release\link-static\log-api-winnt\runtime-link-static\threading-multi\process_id.obj
+process_id.cpp
+compile-c-c++ bin.v2\libs\log\build\msvc-14.0\release\link-static\log-api-winnt\runtime-link-static\threading-multi\core.obj
+core.cpp
+compile-c-c++ bin.v2\libs\log\build\msvc-14.0\release\link-static\log-api-winnt\runtime-link-static\threading-multi\thread_id.obj
+thread_id.cpp
+compile-c-c++ bin.v2\libs\log\build\msvc-14.0\release\link-static\log-api-winnt\runtime-link-static\threading-multi\timer.obj
+timer.cpp
+compile-c-c++ bin.v2\libs\log\build\msvc-14.0\release\link-static\log-api-winnt\runtime-link-static\threading-multi\default_attribute_names.obj
+default_attribute_names.cpp
+compile-c-c++ bin.v2\libs\log\build\msvc-14.0\release\link-static\log-api-winnt\runtime-link-static\threading-multi\exceptions.obj
+exceptions.cpp
+compile-c-c++ bin.v2\libs\log\build\msvc-14.0\release\link-static\log-api-winnt\runtime-link-static\threading-multi\text_ostream_backend.obj
+text_ostream_backend.cpp
+compile-c-c++ bin.v2\libs\log\build\msvc-14.0\release\link-static\log-api-winnt\runtime-link-static\threading-multi\text_multifile_backend.obj
+text_multifile_backend.cpp
+compile-c-c++ bin.v2\libs\log\build\msvc-14.0\release\link-static\log-api-winnt\runtime-link-static\threading-multi\thread_specific.obj
+thread_specific.cpp
+compile-c-c++ bin.v2\libs\log\build\msvc-14.0\release\link-static\log-api-winnt\runtime-link-static\threading-multi\once_block.obj
+once_block.cpp
+compile-c-c++ bin.v2\libs\log\build\msvc-14.0\release\link-static\log-api-winnt\runtime-link-static\threading-multi\syslog_backend.obj
+syslog_backend.cpp
+compile-c-c++ bin.v2\libs\log\build\msvc-14.0\release\link-static\log-api-winnt\runtime-link-static\threading-multi\timestamp.obj
+timestamp.cpp
+compile-c-c++ bin.v2\libs\log\build\msvc-14.0\release\link-static\log-api-winnt\runtime-link-static\threading-multi\default_sink.obj
+default_sink.cpp
+compile-c-c++ bin.v2\libs\log\build\msvc-14.0\release\link-static\log-api-winnt\runtime-link-static\threading-multi\event.obj
+event.cpp
+compile-c-c++ bin.v2\libs\log\build\msvc-14.0\release\link-static\log-api-winnt\runtime-link-static\threading-multi\threadsafe_queue.obj
+threadsafe_queue.cpp
+compile-c-c++ bin.v2\libs\log\build\msvc-14.0\release\link-static\log-api-winnt\runtime-link-static\threading-multi\trivial.obj
+trivial.cpp
+compile-c-c++ bin.v2\libs\log\build\msvc-14.0\release\link-static\log-api-winnt\runtime-link-static\threading-multi\text_file_backend.obj
+text_file_backend.cpp
+.\boost/spirit/home/support/char_encoding/iso8859_1.hpp: warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+compile-c-c++ bin.v2\libs\log\build\msvc-14.0\release\link-static\log-api-winnt\runtime-link-static\threading-multi\spirit_encoding.obj
+spirit_encoding.cpp
+.\boost/spirit/home/support/char_encoding/iso8859_1.hpp: warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+compile-c-c++ bin.v2\libs\log\build\msvc-14.0\release\link-static\log-api-winnt\runtime-link-static\threading-multi\unhandled_exception_count.obj
+unhandled_exception_count.cpp
+compile-c-c++ bin.v2\libs\log\build\msvc-14.0\release\link-static\log-api-winnt\runtime-link-static\threading-multi\dump.obj
+dump.cpp
+compile-c-c++ bin.v2\libs\log\build\msvc-14.0\release\link-static\log-api-winnt\runtime-link-static\threading-multi\dump_ssse3.obj
+dump_ssse3.cpp
+compile-c-c++ bin.v2\libs\log\build\msvc-14.0\release\link-static\log-api-winnt\runtime-link-static\threading-multi\format_parser.obj
+format_parser.cpp
+.\boost/spirit/home/support/char_encoding/iso8859_1.hpp: warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+compile-c-c++ bin.v2\libs\log\build\msvc-14.0\release\link-static\log-api-winnt\runtime-link-static\threading-multi\date_time_format_parser.obj
+date_time_format_parser.cpp
+.\boost/spirit/home/support/char_encoding/iso8859_1.hpp: warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+compile-c-c++ bin.v2\libs\log\build\msvc-14.0\release\link-static\log-api-winnt\runtime-link-static\threading-multi\dump_avx2.obj
+dump_avx2.cpp
+msvc.compile.mc bin.v2\libs\log\build\msvc-14.0\release\link-static\log-api-winnt\runtime-link-static\threading-multi\simple_event_log.h
+MC: Compiling libs\log\src\simple_event_log.mc
+msvc.compile.rc bin.v2\libs\log\build\msvc-14.0\release\link-static\log-api-winnt\runtime-link-static\threading-multi\simple_event_log_res.obj
+Microsoft (R) Windows (R) Resource Compiler Version 10.0.10011.16384
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+compile-c-c++ bin.v2\libs\log\build\msvc-14.0\release\link-static\log-api-winnt\runtime-link-static\threading-multi\light_rw_mutex.obj
+light_rw_mutex.cpp
+compile-c-c++ bin.v2\libs\log\build\msvc-14.0\release\link-static\log-api-winnt\runtime-link-static\threading-multi\debug_output_backend.obj
+debug_output_backend.cpp
+compile-c-c++ bin.v2\libs\log\build\msvc-14.0\release\link-static\log-api-winnt\runtime-link-static\threading-multi\parser_utils.obj
+parser_utils.cpp
+compile-c-c++ bin.v2\libs\log\build\msvc-14.0\release\link-static\log-api-winnt\runtime-link-static\threading-multi\init_from_stream.obj
+init_from_stream.cpp
+compile-c-c++ bin.v2\libs\log\build\msvc-14.0\release\link-static\log-api-winnt\runtime-link-static\threading-multi\named_scope_format_parser.obj
+named_scope_format_parser.cpp
+.\boost/spirit/home/support/char_encoding/iso8859_1.hpp: warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+compile-c-c++ bin.v2\libs\log\build\msvc-14.0\release\link-static\log-api-winnt\runtime-link-static\threading-multi\event_log_backend.obj
+event_log_backend.cpp
+msvc.archive bin.v2\libs\log\build\msvc-14.0\release\link-static\log-api-winnt\runtime-link-static\threading-multi\libboost_log-vc140-mt-s-1_61.lib
+common.copy stage\x86\lib\libboost_log-vc140-mt-s-1_61.lib
+bin.v2\libs\log\build\msvc-14.0\release\link-static\log-api-winnt\runtime-link-static\threading-multi\libboost_log-vc140-mt-s-1_61.lib
+        1 個のファイルをコピーしました。
+compile-c-c++ bin.v2\libs\log\build\msvc-14.0\release\link-static\log-api-winnt\runtime-link-static\threading-multi\settings_parser.obj
+settings_parser.cpp
+.\boost/spirit/home/support/char_encoding/iso8859_1.hpp: warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+compile-c-c++ bin.v2\libs\log\build\msvc-14.0\release\link-static\log-api-winnt\runtime-link-static\threading-multi\filter_parser.obj
+filter_parser.cpp
+.\boost/spirit/home/support/char_encoding/iso8859_1.hpp: warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+compile-c-c++ bin.v2\libs\log\build\msvc-14.0\release\link-static\log-api-winnt\runtime-link-static\threading-multi\init_from_settings.obj
+init_from_settings.cpp
+.\boost/spirit/home/support/char_encoding/iso8859_1.hpp: warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+compile-c-c++ bin.v2\libs\log\build\msvc-14.0\release\link-static\log-api-winnt\runtime-link-static\threading-multi\formatter_parser.obj
+formatter_parser.cpp
+.\boost/spirit/home/support/char_encoding/iso8859_1.hpp: warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+common.mkdir bin.v2\libs\math\build\msvc-14.0\release
+common.mkdir bin.v2\libs\math\build\msvc-14.0\release\link-static
+common.mkdir bin.v2\libs\math\build\msvc-14.0\release\link-static\runtime-link-static
+common.mkdir bin.v2\libs\math\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi
+compile-c-c++-pch bin.v2\libs\math\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\pch.pch
+pch.pch.cpp
+compile-c-c++ bin.v2\libs\math\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\assoc_laguerre.obj
+assoc_laguerre.cpp
+compile-c-c++ bin.v2\libs\math\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\assoc_legendre.obj
+assoc_legendre.cpp
+compile-c-c++ bin.v2\libs\math\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\beta.obj
+beta.cpp
+compile-c-c++ bin.v2\libs\math\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\comp_ellint_1.obj
+comp_ellint_1.cpp
+compile-c-c++ bin.v2\libs\math\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\comp_ellint_2.obj
+comp_ellint_2.cpp
+compile-c-c++ bin.v2\libs\log\build\msvc-14.0\release\link-static\log-api-winnt\runtime-link-static\threading-multi\matches_relation_factory.obj
+matches_relation_factory.cpp
+compile-c-c++ bin.v2\libs\math\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\comp_ellint_3.obj
+comp_ellint_3.cpp
+compile-c-c++ bin.v2\libs\log\build\msvc-14.0\release\link-static\log-api-winnt\runtime-link-static\threading-multi\default_formatter_factory.obj
+default_formatter_factory.cpp
+compile-c-c++ bin.v2\libs\log\build\msvc-14.0\release\link-static\log-api-winnt\runtime-link-static\threading-multi\default_filter_factory.obj
+default_filter_factory.cpp
+.\boost/spirit/home/support/char_encoding/iso8859_1.hpp: warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+compile-c-c++ bin.v2\libs\math\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\cyl_bessel_j.obj
+cyl_bessel_j.cpp
+compile-c-c++ bin.v2\libs\math\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\cyl_bessel_i.obj
+cyl_bessel_i.cpp
+msvc.archive bin.v2\libs\log\build\msvc-14.0\release\link-static\log-api-winnt\runtime-link-static\threading-multi\libboost_log_setup-vc140-mt-s-1_61.lib
+common.copy stage\x86\lib\libboost_log_setup-vc140-mt-s-1_61.lib
+bin.v2\libs\log\build\msvc-14.0\release\link-static\log-api-winnt\runtime-link-static\threading-multi\libboost_log_setup-vc140-mt-s-1_61.lib
+        1 個のファイルをコピーしました。
+compile-c-c++ bin.v2\libs\math\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\cyl_bessel_k.obj
+cyl_bessel_k.cpp
+compile-c-c++ bin.v2\libs\math\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\ellint_1.obj
+ellint_1.cpp
+compile-c-c++ bin.v2\libs\math\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\cyl_neumann.obj
+cyl_neumann.cpp
+compile-c-c++ bin.v2\libs\math\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\ellint_2.obj
+ellint_2.cpp
+compile-c-c++ bin.v2\libs\math\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\ellint_3.obj
+ellint_3.cpp
+compile-c-c++ bin.v2\libs\math\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\hermite.obj
+hermite.cpp
+compile-c-c++ bin.v2\libs\math\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\laguerre.obj
+laguerre.cpp
+compile-c-c++ bin.v2\libs\math\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\legendre.obj
+legendre.cpp
+compile-c-c++ bin.v2\libs\math\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\expint.obj
+expint.cpp
+compile-c-c++ bin.v2\libs\math\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\sph_legendre.obj
+sph_legendre.cpp
+compile-c-c++ bin.v2\libs\math\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\riemann_zeta.obj
+riemann_zeta.cpp
+compile-c-c++ bin.v2\libs\math\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\sph_bessel.obj
+sph_bessel.cpp
+compile-c-c++ bin.v2\libs\math\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\assoc_laguerref.obj
+assoc_laguerref.cpp
+compile-c-c++ bin.v2\libs\math\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\sph_neumann.obj
+sph_neumann.cpp
+compile-c-c++ bin.v2\libs\math\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\betaf.obj
+betaf.cpp
+compile-c-c++ bin.v2\libs\math\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\assoc_legendref.obj
+assoc_legendref.cpp
+msvc.archive bin.v2\libs\math\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\libboost_math_tr1-vc140-mt-s-1_61.lib
+common.copy stage\x86\lib\libboost_math_tr1-vc140-mt-s-1_61.lib
+bin.v2\libs\math\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\libboost_math_tr1-vc140-mt-s-1_61.lib
+        1 個のファイルをコピーしました。
+compile-c-c++ bin.v2\libs\math\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\comp_ellint_1f.obj
+comp_ellint_1f.cpp
+compile-c-c++ bin.v2\libs\math\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\comp_ellint_2f.obj
+comp_ellint_2f.cpp
+compile-c-c++ bin.v2\libs\math\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\comp_ellint_3f.obj
+comp_ellint_3f.cpp
+compile-c-c++ bin.v2\libs\math\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\cyl_bessel_if.obj
+cyl_bessel_if.cpp
+compile-c-c++ bin.v2\libs\math\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\cyl_bessel_jf.obj
+cyl_bessel_jf.cpp
+compile-c-c++ bin.v2\libs\math\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\cyl_bessel_kf.obj
+cyl_bessel_kf.cpp
+compile-c-c++ bin.v2\libs\math\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\cyl_neumannf.obj
+cyl_neumannf.cpp
+compile-c-c++ bin.v2\libs\math\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\ellint_1f.obj
+ellint_1f.cpp
+compile-c-c++ bin.v2\libs\math\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\ellint_2f.obj
+ellint_2f.cpp
+compile-c-c++ bin.v2\libs\math\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\hermitef.obj
+hermitef.cpp
+compile-c-c++ bin.v2\libs\math\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\ellint_3f.obj
+ellint_3f.cpp
+compile-c-c++ bin.v2\libs\math\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\laguerref.obj
+laguerref.cpp
+compile-c-c++ bin.v2\libs\math\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\legendref.obj
+legendref.cpp
+compile-c-c++ bin.v2\libs\math\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\expintf.obj
+expintf.cpp
+...on 500th target...
+compile-c-c++ bin.v2\libs\math\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\sph_legendref.obj
+sph_legendref.cpp
+common.mkdir bin.v2\libs\math\config\msvc-14.0\release
+common.mkdir bin.v2\libs\math\config\msvc-14.0\release\link-static
+compile-c-c++ bin.v2\libs\math\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\riemann_zetaf.obj
+riemann_zetaf.cpp
+common.mkdir bin.v2\libs\math\config\msvc-14.0\release\link-static\runtime-link-static
+common.mkdir bin.v2\libs\math\config\msvc-14.0\release\link-static\runtime-link-static\threading-multi
+compile-c-c++ bin.v2\libs\math\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\acosh.obj
+acosh.cpp
+compile-c-c++ bin.v2\libs\math\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\sph_besself.obj
+sph_besself.cpp
+compile-c-c++ bin.v2\libs\math\config\msvc-14.0\release\link-static\runtime-link-static\threading-multi\has_long_double_support.obj
+has_long_double_support.cpp
+compile-c-c++ bin.v2\libs\math\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\asinh.obj
+asinh.cpp
+compile-c-c++ bin.v2\libs\math\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\assoc_laguerrel.obj
+assoc_laguerrel.cpp
+compile-c-c++ bin.v2\libs\math\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\atanh.obj
+atanh.cpp
+compile-c-c++ bin.v2\libs\math\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\betal.obj
+betal.cpp
+compile-c-c++ bin.v2\libs\math\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\sph_neumannf.obj
+sph_neumannf.cpp
+compile-c-c++ bin.v2\libs\math\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\assoc_legendrel.obj
+assoc_legendrel.cpp
+msvc.archive bin.v2\libs\math\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\libboost_math_tr1f-vc140-mt-s-1_61.lib
+common.copy stage\x86\lib\libboost_math_tr1f-vc140-mt-s-1_61.lib
+bin.v2\libs\math\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\libboost_math_tr1f-vc140-mt-s-1_61.lib
+        1 個のファイルをコピーしました。
+compile-c-c++ bin.v2\libs\math\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\comp_ellint_1l.obj
+comp_ellint_1l.cpp
+compile-c-c++ bin.v2\libs\math\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\comp_ellint_2l.obj
+comp_ellint_2l.cpp
+compile-c-c++ bin.v2\libs\math\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\comp_ellint_3l.obj
+comp_ellint_3l.cpp
+compile-c-c++ bin.v2\libs\math\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\cyl_bessel_il.obj
+cyl_bessel_il.cpp
+compile-c-c++ bin.v2\libs\math\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\cyl_bessel_jl.obj
+cyl_bessel_jl.cpp
+compile-c-c++ bin.v2\libs\math\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\cyl_bessel_kl.obj
+cyl_bessel_kl.cpp
+compile-c-c++ bin.v2\libs\math\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\ellint_1l.obj
+ellint_1l.cpp
+compile-c-c++ bin.v2\libs\math\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\ellint_2l.obj
+ellint_2l.cpp
+compile-c-c++ bin.v2\libs\math\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\cyl_neumannl.obj
+cyl_neumannl.cpp
+compile-c-c++ bin.v2\libs\math\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\hermitel.obj
+hermitel.cpp
+compile-c-c++ bin.v2\libs\math\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\ellint_3l.obj
+ellint_3l.cpp
+compile-c-c++ bin.v2\libs\math\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\laguerrel.obj
+laguerrel.cpp
+compile-c-c++ bin.v2\libs\math\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\legendrel.obj
+legendrel.cpp
+compile-c-c++ bin.v2\libs\math\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\expintl.obj
+expintl.cpp
+compile-c-c++ bin.v2\libs\math\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\sph_legendrel.obj
+sph_legendrel.cpp
+compile-c-c++ bin.v2\libs\math\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\riemann_zetal.obj
+riemann_zetal.cpp
+compile-c-c++ bin.v2\libs\math\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\copysign.obj
+copysign.cpp
+compile-c-c++ bin.v2\libs\math\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\sph_bessell.obj
+sph_bessell.cpp
+compile-c-c++ bin.v2\libs\math\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\erf.obj
+erf.cpp
+compile-c-c++ bin.v2\libs\math\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\cbrt.obj
+cbrt.cpp
+compile-c-c++ bin.v2\libs\math\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\erfc.obj
+erfc.cpp
+compile-c-c++ bin.v2\libs\math\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\sph_neumannl.obj
+sph_neumannl.cpp
+compile-c-c++ bin.v2\libs\math\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\expm1.obj
+expm1.cpp
+compile-c-c++ bin.v2\libs\math\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\fmax.obj
+fmax.cpp
+compile-c-c++ bin.v2\libs\math\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\fmin.obj
+fmin.cpp
+msvc.archive bin.v2\libs\math\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\libboost_math_tr1l-vc140-mt-s-1_61.lib
+compile-c-c++ bin.v2\libs\math\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\fpclassify.obj
+fpclassify.cpp
+common.copy stage\x86\lib\libboost_math_tr1l-vc140-mt-s-1_61.lib
+bin.v2\libs\math\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\libboost_math_tr1l-vc140-mt-s-1_61.lib
+        1 個のファイルをコピーしました。
+compile-c-c++ bin.v2\libs\math\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\hypot.obj
+hypot.cpp
+compile-c-c++ bin.v2\libs\math\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\llround.obj
+llround.cpp
+compile-c-c++ bin.v2\libs\math\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\log1p.obj
+log1p.cpp
+compile-c-c++ bin.v2\libs\math\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\lgamma.obj
+lgamma.cpp
+compile-c-c++ bin.v2\libs\math\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\lround.obj
+lround.cpp
+compile-c-c++ bin.v2\libs\math\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\nextafter.obj
+nextafter.cpp
+compile-c-c++ bin.v2\libs\math\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\nexttoward.obj
+nexttoward.cpp
+compile-c-c++ bin.v2\libs\math\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\round.obj
+round.cpp
+compile-c-c++ bin.v2\libs\math\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\tgamma.obj
+tgamma.cpp
+compile-c-c++ bin.v2\libs\math\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\trunc.obj
+trunc.cpp
+compile-c-c++ bin.v2\libs\math\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\acoshf.obj
+acoshf.cpp
+compile-c-c++ bin.v2\libs\math\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\asinhf.obj
+asinhf.cpp
+msvc.archive bin.v2\libs\math\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\libboost_math_c99-vc140-mt-s-1_61.lib
+common.copy stage\x86\lib\libboost_math_c99-vc140-mt-s-1_61.lib
+bin.v2\libs\math\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\libboost_math_c99-vc140-mt-s-1_61.lib
+        1 個のファイルをコピーしました。
+compile-c-c++ bin.v2\libs\math\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\atanhf.obj
+atanhf.cpp
+compile-c-c++ bin.v2\libs\math\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\copysignf.obj
+copysignf.cpp
+compile-c-c++ bin.v2\libs\math\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\erfcf.obj
+erfcf.cpp
+compile-c-c++ bin.v2\libs\math\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\erff.obj
+erff.cpp
+compile-c-c++ bin.v2\libs\math\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\expm1f.obj
+expm1f.cpp
+compile-c-c++ bin.v2\libs\math\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\fmaxf.obj
+fmaxf.cpp
+compile-c-c++ bin.v2\libs\math\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\fminf.obj
+fminf.cpp
+compile-c-c++ bin.v2\libs\math\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\fpclassifyf.obj
+fpclassifyf.cpp
+compile-c-c++ bin.v2\libs\math\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\hypotf.obj
+hypotf.cpp
+compile-c-c++ bin.v2\libs\math\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\llroundf.obj
+llroundf.cpp
+compile-c-c++ bin.v2\libs\math\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\lgammaf.obj
+lgammaf.cpp
+compile-c-c++ bin.v2\libs\math\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\cbrtf.obj
+cbrtf.cpp
+compile-c-c++ bin.v2\libs\math\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\log1pf.obj
+log1pf.cpp
+compile-c-c++ bin.v2\libs\math\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\lroundf.obj
+lroundf.cpp
+compile-c-c++ bin.v2\libs\math\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\nextafterf.obj
+nextafterf.cpp
+compile-c-c++ bin.v2\libs\math\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\nexttowardf.obj
+nexttowardf.cpp
+compile-c-c++ bin.v2\libs\math\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\roundf.obj
+roundf.cpp
+compile-c-c++ bin.v2\libs\math\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\tgammaf.obj
+tgammaf.cpp
+compile-c-c++ bin.v2\libs\math\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\truncf.obj
+truncf.cpp
+compile-c-c++ bin.v2\libs\math\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\acoshl.obj
+acoshl.cpp
+compile-c-c++ bin.v2\libs\math\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\asinhl.obj
+asinhl.cpp
+msvc.archive bin.v2\libs\math\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\libboost_math_c99f-vc140-mt-s-1_61.lib
+common.copy stage\x86\lib\libboost_math_c99f-vc140-mt-s-1_61.lib
+bin.v2\libs\math\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\libboost_math_c99f-vc140-mt-s-1_61.lib
+        1 個のファイルをコピーしました。
+compile-c-c++ bin.v2\libs\math\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\atanhl.obj
+atanhl.cpp
+compile-c-c++ bin.v2\libs\math\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\copysignl.obj
+copysignl.cpp
+compile-c-c++ bin.v2\libs\math\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\erfcl.obj
+erfcl.cpp
+compile-c-c++ bin.v2\libs\math\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\expm1l.obj
+expm1l.cpp
+compile-c-c++ bin.v2\libs\math\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\erfl.obj
+erfl.cpp
+compile-c-c++ bin.v2\libs\math\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\fmaxl.obj
+fmaxl.cpp
+compile-c-c++ bin.v2\libs\math\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\fminl.obj
+fminl.cpp
+compile-c-c++ bin.v2\libs\math\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\fpclassifyl.obj
+fpclassifyl.cpp
+compile-c-c++ bin.v2\libs\math\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\hypotl.obj
+hypotl.cpp
+compile-c-c++ bin.v2\libs\math\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\llroundl.obj
+llroundl.cpp
+compile-c-c++ bin.v2\libs\math\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\lgammal.obj
+lgammal.cpp
+compile-c-c++ bin.v2\libs\math\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\log1pl.obj
+log1pl.cpp
+compile-c-c++ bin.v2\libs\math\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\cbrtl.obj
+cbrtl.cpp
+compile-c-c++ bin.v2\libs\math\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\lroundl.obj
+lroundl.cpp
+compile-c-c++ bin.v2\libs\math\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\nextafterl.obj
+nextafterl.cpp
+compile-c-c++ bin.v2\libs\math\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\nexttowardl.obj
+nexttowardl.cpp
+compile-c-c++ bin.v2\libs\math\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\roundl.obj
+roundl.cpp
+common.mkdir bin.v2\libs\timer\build\msvc-14.0\release
+...on 600th target...
+common.mkdir bin.v2\libs\timer\build\msvc-14.0\release\link-static
+common.mkdir bin.v2\libs\timer\build\msvc-14.0\release\link-static\runtime-link-static
+common.mkdir bin.v2\libs\timer\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi
+compile-c-c++ bin.v2\libs\math\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\truncl.obj
+truncl.cpp
+msvc.archive bin.v2\libs\test\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\libboost_unit_test_framework-vc140-mt-s-1_61.lib
+compile-c-c++ bin.v2\libs\math\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\tgammal.obj
+tgammal.cpp
+common.copy stage\x86\lib\libboost_unit_test_framework-vc140-mt-s-1_61.lib
+bin.v2\libs\test\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\libboost_unit_test_framework-vc140-mt-s-1_61.lib
+        1 個のファイルをコピーしました。
+common.mkdir bin.v2\libs\program_options\build\msvc-14.0\release
+common.mkdir bin.v2\libs\program_options\build\msvc-14.0\release\link-static
+common.mkdir bin.v2\libs\program_options\build\msvc-14.0\release\link-static\runtime-link-static
+msvc.archive bin.v2\libs\math\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\libboost_math_c99l-vc140-mt-s-1_61.lib
+common.mkdir bin.v2\libs\program_options\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi
+common.copy stage\x86\lib\libboost_math_c99l-vc140-mt-s-1_61.lib
+bin.v2\libs\math\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\libboost_math_c99l-vc140-mt-s-1_61.lib
+        1 個のファイルをコピーしました。
+compile-c-c++ bin.v2\libs\timer\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\auto_timers_construction.obj
+auto_timers_construction.cpp
+compile-c-c++ bin.v2\libs\timer\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\cpu_timer.obj
+cpu_timer.cpp
+msvc.archive bin.v2\libs\timer\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\libboost_timer-vc140-mt-s-1_61.lib
+common.copy stage\x86\lib\libboost_timer-vc140-mt-s-1_61.lib
+bin.v2\libs\timer\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\libboost_timer-vc140-mt-s-1_61.lib
+        1 個のファイルをコピーしました。
+compile-c-c++ bin.v2\libs\program_options\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\config_file.obj
+config_file.cpp
+compile-c-c++ bin.v2\libs\program_options\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\cmdline.obj
+cmdline.cpp
+compile-c-c++ bin.v2\libs\program_options\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\options_description.obj
+options_description.cpp
+compile-c-c++ bin.v2\libs\program_options\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\positional_options.obj
+positional_options.cpp
+compile-c-c++ bin.v2\libs\program_options\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\parsers.obj
+parsers.cpp
+compile-c-c++ bin.v2\libs\program_options\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\variables_map.obj
+variables_map.cpp
+compile-c-c++ bin.v2\libs\program_options\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\utf8_codecvt_facet.obj
+utf8_codecvt_facet.cpp
+compile-c-c++ bin.v2\libs\program_options\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\convert.obj
+convert.cpp
+compile-c-c++ bin.v2\libs\program_options\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\value_semantic.obj
+value_semantic.cpp
+compile-c-c++ bin.v2\libs\program_options\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\winmain.obj
+winmain.cpp
+compile-c-c++ bin.v2\libs\program_options\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\split.obj
+split.cpp
+msvc.archive bin.v2\libs\program_options\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\libboost_program_options-vc140-mt-s-1_61.lib
+common.copy stage\x86\lib\libboost_program_options-vc140-mt-s-1_61.lib
+bin.v2\libs\program_options\build\msvc-14.0\release\link-static\runtime-link-static\threading-multi\libboost_program_options-vc140-mt-s-1_61.lib
+        1 個のファイルをコピーしました。
+...failed updating 56 targets...
+...skipped 4 targets...
+...updated 570 targets...
