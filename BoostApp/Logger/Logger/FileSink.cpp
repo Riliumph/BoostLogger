@@ -18,12 +18,12 @@
 /* Original */
 #include "GlobalLogger.h"
 
+namespace sink = boost::log::sinks;
+namespace expr = boost::log::expressions;
+namespace attr = boost::log::attributes;
+namespace keys = boost::log::keywords;
 namespace Log{
 	namespace File{
-		namespace sink = boost::log::sinks;
-		namespace expr = boost::log::expressions;
-		namespace attr = boost::log::attributes;
-		namespace keys = boost::log::keywords;
 		using backend_t = boost::log::sinks::text_file_backend;
 		using frontend_t = sink::synchronous_sink<backend_t>;
 
@@ -74,7 +74,7 @@ namespace Log{
 		#ifdef _DEBUG
 			frontend->set_filter( Log::severity >= Log::Lv::Debug );
 		#else
-			frontend->set_filter( Log::severity >= Log::Lv::Error );
+			frontend->set_filter( Log::severity >= Log::Lv::Info );
 		#endif
 			return frontend;
 		}

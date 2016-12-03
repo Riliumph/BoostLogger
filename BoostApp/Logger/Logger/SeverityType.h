@@ -1,7 +1,7 @@
 #ifndef INCLUDE_SEVERITY_TYPE_H
 #define INCLUDE_SEVERITY_TYPE_H
 /* Boost */
-#include <boost/log/expressions/keyword.hpp>			// for BOOST_LOG_ATTRIBUTE_KEYWORD
+#include <boost/log/expressions/keyword.hpp>    // for BOOST_LOG_ATTRIBUTE_KEYWORD
 
 namespace Log{
 	/// Log level type

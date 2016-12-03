@@ -18,11 +18,11 @@
 /* Original */
 #include "GlobalLogger.h"
 
+namespace sink = boost::log::sinks;
+namespace expr = boost::log::expressions;
+namespace attr = boost::log::attributes;
 namespace Log{
 	namespace Console{
-		namespace sink = boost::log::sinks;
-		namespace expr = boost::log::expressions;
-		namespace attr = boost::log::attributes;
 		using backend_t = boost::log::sinks::text_ostream_backend;
 		using frontend_t = sink::synchronous_sink<backend_t>;
 
@@ -68,7 +68,11 @@ namespace Log{
 			  % expr::attr<std::string>( "File" )
 			  % expr::attr<line_t>( "Line" )
 			);
+		#ifdef _DEBUG
+			frontend->set_filter( Log::severity >= Log::Lv::Warn );
+		#else
 			frontend->set_filter( Log::severity >= Log::Lv::Error );
+		#endif
 			return frontend;
 		}
 

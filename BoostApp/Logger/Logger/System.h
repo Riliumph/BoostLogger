@@ -1,8 +1,8 @@
 #ifndef INCLUDE_LOGGER_SYSTEM_H
 #define INCLUDE_LOGGER_SYSTEM_H
 /* Boost */
-#include <boost/log/sources/severity_feature.hpp>		// for BOOST_LOG_SEV
-#include <boost/log/utility/manipulators/add_value.hpp>	// for add_value
+#include <boost/log/sources/severity_feature.hpp>        // for BOOST_LOG_SEV
+#include <boost/log/utility/manipulators/add_value.hpp>  // for add_value
 /* Original */
 #include "GlobalLogger.h"
 
@@ -21,4 +21,4 @@ namespace Log{
 	 */
 	void BootLogSystem();
 }// namespace Log
-#endif // INCLUDE_LOGGER_SYSTEM_H
+#endif// INCLUDE_LOGGER_SYSTEM_H
