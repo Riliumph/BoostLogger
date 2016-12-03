@@ -3,18 +3,17 @@
 #include <ostream>
 #include <string>
 /* Boost */
-#include <boost/log/sources/global_logger_storage.hpp> //BOOST_LOG_GLOBAL_LOGGER‚Ì’è‹`
-#include <boost/log/core.hpp>	// sink
+#include <boost/log/sources/global_logger_storage.hpp>    //for BOOST_LOG_GLOBAL_LOGGER
+#include <boost/log/core.hpp>    // for sink
 #include <boost/log/utility/setup/common_attributes.hpp>   
-
 #include <boost/log/attributes/current_process_name.hpp>
 #include <boost/log/sources/severity_logger.hpp>
-//ORIGINAL
+/* Original */
 #include "Utility/e_cast.hpp"
 
+namespace src = boost::log::sources;
+namespace attr = boost::log::attributes;
 namespace Log{
-	namespace src = boost::log::sources;
-	namespace attr = boost::log::attributes;
 	namespace{
 		const std::string LV_NAME[enum_cast( Log::Lv::NUM )] = { "Debug","Info","Warn","Error","Fatal" };
 	}
